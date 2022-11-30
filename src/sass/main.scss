@@ -1,0 +1,17 @@
+// Підключення утиліт
+@import './abstracts/variables';
+@import './abstracts/placeholders';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+@import './abstracts/breakpoints';
+// Підключення нормалайза
+@import './base/common';
+// Підключення компонентів
+@import './components/buttons';
+@import './components/container';
+// Header
+@import './header/header';
+// Main
+
+// Footer
+@import './footer/footer';
