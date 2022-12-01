@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Film P3';
+    src: local('Film P3 Bold'), local('Film-P3-Bold'), url('../fonts/filmp3/FilmP3Bold.woff2') format('woff2'),
+        url('../fonts/filmp3/FilmP3Bold.woff') format('woff'), url('../fonts/filmp3/FilmP3Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: local('TimesNewRoman'), url('../fonts/times/TimesNewRoman-Regular.ttf') format('truetype'),
+        url('../fonts/times/TimesNewRoman-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/times/TimesNewRoman-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url('../fonts/montserrat/Montserrat-Medium.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
