@@ -1,3 +1,6 @@
+// Підключення base
+@import './base/common';
+@import './base/fonts';
 // Підключення утиліт
 @import './abstracts/variables';
 @import './abstracts/placeholders';
@@ -5,8 +8,6 @@
 @import './abstracts/functions';
 @import './abstracts/breakpoints';
 @import './components/body';
-// Підключення нормалайза
-@import './base/common';
 // Підключення компонентів
 @import './components/buttons';
 @import './components/container';
