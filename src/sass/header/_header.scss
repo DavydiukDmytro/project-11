@@ -8,6 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
+    background-color: black;
 }
 
 .header__container {
@@ -52,8 +53,7 @@
 
 .navigation__list {
     display: flex;
-
-    @media screen and (max-width:1023px) {
+       @media screen and (max-width:1023px) {
         justify-content: space-between;
     }
 
@@ -93,7 +93,8 @@ font-family: 'Montserrat', sans-serif;
 
     @media screen and (max-width:1023px) {
             padding-top: 28px;
-            padding-bottom: 12px;}
+            padding-bottom: 16px;
+        }
 
     @media screen and (min-width:$tablet) {
         margin-right: 32px;
@@ -153,3 +154,13 @@ font-family: 'Montserrat', sans-serif;
     }
 }
 
+.networks {
+    display: flex;
+    gap: 20px;
+    width: 112px;
+    height: 24px;
+}
+
+.networks__icon {
+    fill: rgba(243, 198, 83, 0.7);
+}

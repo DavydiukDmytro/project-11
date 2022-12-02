@@ -94,6 +94,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
+  background-color: black;
 }
 
 .header__container {
@@ -181,7 +182,7 @@ ul {
 @media screen and (max-width: 1023px) {
   .navigation__link {
     padding-top: 28px;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -244,4 +245,15 @@ ul {
   .header__networks {
     display: block;
   }
+}
+
+.networks {
+  display: flex;
+  gap: 20px;
+  width: 112px;
+  height: 24px;
+}
+
+.networks__icon {
+  fill: rgba(243, 198, 83, 0.7);
 }/*# sourceMappingURL=main.css.map */
