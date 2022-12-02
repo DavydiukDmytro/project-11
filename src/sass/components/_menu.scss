@@ -15,7 +15,7 @@
     }
 
     &__table-title {
-        margin-bottom: 16px;
+        margin: 16px 0;
 
         font-family: 'TimesNewRoman', Times, serif;
         font-weight: 700;
@@ -24,15 +24,16 @@
         text-align: left;
 
         color: $black;
-
-        &:not(:first-child) {
-            margin-top: 16px;
+            
+        &--first {
+            margin-top: 0;
         }
     }
 
     &__dish {
+        // width: 100%;
         width: 225px;
-        padding-bottom: 4px;
+        padding-bottom: 4px;       
 
         font-weight: 500;
         font-size: 14px;
@@ -41,23 +42,32 @@
         text-align: left;
         
         color: $black;
+
+        &--big {
+            padding-bottom: 11px;
+        }
     }
 
     &__weight {
-        width: 79.5px;
-        
+        // display: inline-table;
+        padding-left: 21px;
+
         font-weight: 300;
         font-size: 14px;
         line-height: 1.21;
         letter-spacing: 0.02em;
-        text-align: right;
+        text-align: left;
         
         color: $black;
+
+        &--big {
+            padding-bottom: 11px;
+        }
     }
 
     &__price {
-        width: 79.5px;
-
+        padding-left: 21px;
+  
         font-weight: 700;
         font-size: 14px;
         line-height: 1.21;
@@ -65,10 +75,13 @@
         text-align: right;
 
         color: $black;
+
+        &--big {
+            padding-bottom: 11px;
+        }
     }
 
     &__dish-components {
-        width: 225px;
         padding-bottom: 8px;
 
         font-weight: 400;
@@ -80,35 +93,36 @@
         color: $black;
     }
 
-    &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 32px auto 0 auto;
-        width: 236px;
-        height: 49px;
-        cursor: pointer;
+    // &__button {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     margin: 32px auto 0 auto;
+    //     width: 236px;
+    //     height: 49px;
+    //     cursor: pointer;
         
-        background-color: $black;
-        border: 2px solid #FFFDEE;
-        border-radius: 25px;
+    //     background-color: $black;
+    //     border: 2px solid #FFFDEE;
+    //     border-radius: 25px;
 
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;       
-        letter-spacing: 0.02em;
-        color: $accent;
+    //     font-weight: 700;
+    //     font-size: 16px;
+    //     line-height: 1.25;       
+    //     letter-spacing: 0.02em;
+    //     color: $accent;
 
-    }
+    // }
 
 }
 
 table {
-    
-    border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;  
     border: 1px solid tomato;
 }
 tr, td {
     border: 1px solid tomato;
 }
+
  
