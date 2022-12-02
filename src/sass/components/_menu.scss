@@ -1,0 +1,114 @@
+.menu {
+    padding: 32px 0;
+
+    &__title {
+        margin-bottom: 32px;
+
+        font-family: 'TimesNewRoman', Times, serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.15;
+        text-transform: uppercase;
+        text-align: left;
+
+        color: $black;
+    }
+
+    &__table-title {
+        margin-bottom: 16px;
+
+        font-family: 'TimesNewRoman', Times, serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: left;
+
+        color: $black;
+
+        &:not(:first-child) {
+            margin-top: 16px;
+        }
+    }
+
+    &__dish {
+        width: 225px;
+        padding-bottom: 4px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        text-align: left;
+        
+        color: $black;
+    }
+
+    &__weight {
+        width: 79.5px;
+        
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        text-align: right;
+        
+        color: $black;
+    }
+
+    &__price {
+        width: 79.5px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        text-align: right;
+
+        color: $black;
+    }
+
+    &__dish-components {
+        width: 225px;
+        padding-bottom: 8px;
+
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: left;
+        
+        color: $black;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 32px auto 0 auto;
+        width: 236px;
+        height: 49px;
+        cursor: pointer;
+        
+        background-color: $black;
+        border: 2px solid #FFFDEE;
+        border-radius: 25px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;       
+        letter-spacing: 0.02em;
+        color: $accent;
+
+    }
+
+}
+
+table {
+    
+    border-collapse: collapse;
+    border: 1px solid tomato;
+}
+tr, td {
+    border: 1px solid tomato;
+}
+ 
