@@ -1,6 +1,14 @@
 .menu {
     padding: 32px 0;
 
+    @media (min-width: 1024px) {
+        padding: 58px 0 40px 0;
+    }
+
+    @media (min-width: 1024px) {
+        padding-bottom: 60px;
+    }
+
     &__title {
         margin-bottom: 32px;
 
@@ -12,6 +20,36 @@
         text-align: left;
 
         color: $black;
+
+        @media (min-width: 1024px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__tables {
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__section1 {
+        @media (min-width: 1024px) {
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 87px;            
+        }
+
+        @media (min-width: 1280px) {
+            margin-right: 142px;
+        }
+    }
+    
+    &__section2 {
+        @media (min-width: 1024px) {
+            display: inline-flex;
+            flex-direction: column;
+        }
     }
 
     &__table-title {
@@ -28,11 +66,24 @@
         &--first {
             margin-top: 0;
         }
+
+        @media (min-width: 1024px) {
+            margin: 20px 0;
+            
+            &--first,
+            &--second {
+                margin-top: 0;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            font-size: 24px;
+            line-height: 1.16;
+        }
     }
 
     &__dish {
-        // width: 100%;
-        width: 225px;
+        width: 226px;
         padding-bottom: 4px;       
 
         font-weight: 500;
@@ -46,10 +97,23 @@
         &--big {
             padding-bottom: 11px;
         }
+
+        @media (min-width: 1024px) {
+            width: 229px;
+        }          
+
+        @media (min-width: 1280px) {
+            width: 293px;
+            font-size: 16px;
+            line-height: 1.25;
+
+            &--big {
+                padding-bottom: 12px;
+            }
+        }
     }
 
     &__weight {
-        // display: inline-table;
         padding-left: 21px;
 
         font-weight: 300;
@@ -62,6 +126,18 @@
 
         &--big {
             padding-bottom: 11px;
+        }
+
+        @media (min-width: 1024px) {
+            padding-left: 39px;    
+        }
+
+        @media (min-width: 1280px) {
+            padding-left: 26px;
+
+            &--big {
+                padding-bottom: 12px;
+            }
         }
     }
 
@@ -79,6 +155,18 @@
         &--big {
             padding-bottom: 11px;
         }
+
+        @media (min-width: 1024px) {
+            padding-left: 45px;
+        }
+
+        @media (min-width: 1280px) {
+            padding-left: 58px;
+            
+            &--big {
+                padding-bottom: 12px;
+            }
+        }
     }
 
     &__dish-components {
@@ -91,38 +179,64 @@
         text-align: left;
         
         color: $black;
-    }
 
-    // &__button {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     margin: 32px auto 0 auto;
-    //     width: 236px;
-    //     height: 49px;
-    //     cursor: pointer;
+        @media (min-width: 1024px) {
+            padding-right: 4px;
+        }
         
-    //     background-color: $black;
-    //     border: 2px solid #FFFDEE;
-    //     border-radius: 25px;
+        @media (min-width: 1280px) {
+            padding-right: 31px;
+            padding-bottom: 12px;
+        }
+    }
+}
 
-    //     font-weight: 700;
-    //     font-size: 16px;
-    //     line-height: 1.25;       
-    //     letter-spacing: 0.02em;
-    //     color: $accent;
+.mimino-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 21px auto 0 auto;
+    cursor: pointer;
 
-    // }
-
+    @media (min-width: 1024px) {
+        margin: 52px 0 0 auto;   
+    }
+    
+    @media (min-width: 1280px) {
+        margin: 31px 0 0 auto;
+    }
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;  
-    border: 1px solid tomato;
+    border-collapse: collapse;
+    border: 0;  
+    // border: 1px solid tomato;
 }
 tr, td {
-    border: 1px solid tomato;
+    border: 0;
+    // border: 1px solid tomato;
 }
+
+// &__button {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 32px auto 0 auto;
+//     width: 236px;
+//     height: 49px;
+//     cursor: pointer;
+
+//     background-color: $black;
+//     border: 2px solid #FFFDEE;
+//     border-radius: 25px;
+
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.25;       
+//     letter-spacing: 0.02em;
+//     color: $accent;
+
+// }
 
  
