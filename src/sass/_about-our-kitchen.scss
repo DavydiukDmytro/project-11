@@ -17,6 +17,7 @@ button {
 
 .kitchen {
     background: #FFFDEE;
+    position: relative;
 
     h3 {
         font-family: $font-secondary-m;
@@ -191,7 +192,10 @@ button {
         }
 
         @include for-desktop {
-            
+            .slider-img {
+                max-width: 245px;
+                height: 245px;
+            }
         }
 
     }
@@ -215,6 +219,11 @@ button {
         margin: 0;
         margin-left: auto;
         max-width: 428px;
+    }
+
+    @include for-desktop {
+        max-width: 530px;
+        margin-top: -130px;
     }
 }
 
