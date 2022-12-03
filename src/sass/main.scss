@@ -11,9 +11,10 @@
 // Підключення компонентів
 @import './components/buttons';
 @import './components/container';
+@import './components/section';
 // Header
 @import './header/header';
 // Main
-
+@import './layout/index';
 // Footer
 @import './footer/footer';
