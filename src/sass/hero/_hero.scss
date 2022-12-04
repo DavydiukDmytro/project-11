@@ -60,27 +60,6 @@
             url(/src/images/hero-restorant@2x.jpg);
     }
 }
-.hero--bg-room{
-    max-width: 100%;
-    height: auto;
-    background-image: url(/src/images/hero-hotel.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
-        background-image: url(/src/images/hero-hotel@2x.jpg);
-    }
-}
-
-
-   
-  
-
-    
-
-   
 
 .hero__title {
     margin-top: 0;
@@ -165,12 +144,6 @@
         }
    
 }
-.btn{
-    width: 236px;
-    height: 38px;
-
-}
-
 
 .hero__list{
     display: flex;
@@ -178,25 +151,6 @@
     position: absolute;
     left: 15px;
     bottom: 20px;
-
-    @media (min-width:$tablet) {
-            right: auto;
-            top: auto;
-            left: 47px;
-            bottom: 15px;
-        }
-    @media (min-width:$desktop) {
-            display: none;
-        }
-}
-.hero__list-room{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    left: 15px;
-    bottom: 14px;
 
     @media (min-width:$tablet) {
             right: auto;
@@ -242,8 +196,16 @@
         letter-spacing: 0.01em;
     
         color: #E5E5E5;
+        @media (min-width:$tablet){
+            font-size: 16px;
+        }
 }
 .link{
     text-decoration: none;
-    color: inherit;
+}
+
+.btn{
+    width: 236px;
+    height: 38px;
+
 }
