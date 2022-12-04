@@ -122,12 +122,13 @@
         background: rgba(243, 198, 83, 0.8);
         border-radius: 3px;
         transform: scaleX(0);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &:hover::after,
     &:focus::after {
-        transform: scaleX(1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transform: scaleX(1);
+      
     }
 
     @media screen and (max-width:1023px) {
@@ -147,6 +148,7 @@
     align-items: center;
     white-space: nowrap;
 
+  
     @media screen and (min-width:$tablet) {
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
@@ -154,38 +156,40 @@
     }
 }
 
-.navigation__contacts {
+.navigation__bloc {
+    white-space: nowrap;
     display: flex;
     align-items: center;
+
+    @media screen and (min-width:$tablet) {
+    margin-right: 16px;
+}
 }
 
-
-.navigation__icon {
-    fill: $accent;
-    transform: scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .navigation__box:hover &,
-    .navigation__box:focus & {
-        transform: scale(1.2);
-    }
+.navigation__contacts {
+    width: 24px;
+    height: 24px;
 
     @media screen and (min-width:$tablet) {
         margin-right: 8px;
     }
 }
 
+.navigation__icon {
+    fill: $accent;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .navigation__bloc:hover &,
+    .navigation__bloc:focus & {
+        transform: scale(1.2);
+    }
+}
+
 .navigation__phone {
     text-decoration: none;
     align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .navigation__box:hover &,
-    .navigation__box:focus &{
-        color:$accent;
-    }
-
-
+  
     @media screen and (max-width:1023px) {
         display: none;
     }
@@ -199,8 +203,23 @@
     }
 }
 
-.navigation__phone--first {
-    margin-right: 16px;
+.navigation__phone--pair {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .navigation__bloc:hover &,
+    .navigation__bloc:focus & {
+        color: $accent;
+    }
+
+}
+
+.navigation__phone--single {
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent;
+    }
 }
 
 .header__networks {
