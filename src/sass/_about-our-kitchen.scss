@@ -1,36 +1,14 @@
-a {
-    text-decoration: none;
-}
-
-button {
-    display: inline-block;
-    border: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    background: transparent;
-}
-
 .kitchen {
-    background: #FFFDEE;
+    background: $primary-bg;
     position: relative;
 
-    h3 {
-        font-family: $font-secondary-m;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.15;
-        color: #B4B4B4;
-    }
-
-    p {
-        font-family: $font-primary-m;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
+    .btn {
+        display: inline-block;
+        border: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        background: transparent;
     }
 
     .logo {
@@ -40,18 +18,8 @@ button {
         font-size: 40px;
         line-height: 1.08;
         letter-spacing: 0.3em;
-        color: #494848;
+        color: $onpagesnamecolor;
         margin: 12px 0;
-    }
-
-    img {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-
-        @include for-tablet {
-            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-            border-radius: 0;
-        }
     }
 
     .container {
@@ -71,10 +39,25 @@ button {
         flex-wrap: wrap;
         padding: 16px 0;
 
+        &__subtitle {
+            font-family: $font-secondary-m;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.15;
+            color: #B4B4B4;
+        }
+
         &__description {
             max-width: 258px;
             margin-bottom: 28px;
-            color: #5F5F5F;
+            color: $description-text-color;
+            font-family: $font-primary-m;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
         }
 
         &__picture {
@@ -88,22 +71,39 @@ button {
         align-items: center;
 
         &__picture {
-            img {
-                all: unset;            }
+            .kitchen__ingredients-img {
+                all: unset;
+            }
         }
 
         &__description {
+            font-family: $font-primary-m;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
             margin-left: 20px;
             color: $secondary-text;
         }
     }
 
+    .img-shadow {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+
+        @include for-tablet {
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+            border-radius: 0;
+        }
+    }
+
     @include for-tablet {
-        h3 {
+        .kitchen__chiefs__subtitle {
             font-size: 32px;
         }
 
-        p {
+        .kitchen__chiefs__description {
             font-size: 16px;
         }
 
