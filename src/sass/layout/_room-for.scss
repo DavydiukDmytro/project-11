@@ -1,6 +1,11 @@
+.block {
+  background-color: aquamarine;
+  height: 102px;
+}
+
 .room-for {
   background-color: $secondary-bg;
-  padding-top: 102px;
+  padding: 72px 0 40px 0;
 }
 
 .room-for__container {
@@ -9,7 +14,7 @@
 
 .room-for__img {
   position: absolute;
-  top: -32px;
+  top: -104px;
   left: 95px;
 
 }
@@ -19,17 +24,32 @@
 .room-for__content {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  // align-items: end;
   max-width: 453px;
   margin-left: auto;
+  margin-bottom: 188px;
+  margin-right: 57px;
 }
 
 .room-for__sub-title {
   margin-left: auto;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #B4B4B4;
 }
 
 .room-for__logo {
   margin-left: auto;
+  font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 69px;
+    letter-spacing: 0.3em;
+  color: #494848;
 }
 
 .room-for__title {
