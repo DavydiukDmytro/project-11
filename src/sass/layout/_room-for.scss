@@ -1,0 +1,41 @@
+.room-for {
+  background-color: $secondary-bg;
+  padding-top: 102px;
+}
+
+.room-for__container {
+  position: relative;
+}
+
+.room-for__img {
+  position: absolute;
+  top: -32px;
+  left: 95px;
+
+}
+
+
+
+.room-for__content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  max-width: 453px;
+  margin-left: auto;
+}
+
+.room-for__sub-title {
+  margin-left: auto;
+}
+
+.room-for__logo {
+  margin-left: auto;
+}
+
+.room-for__title {
+    margin-right: auto;
+}
+
+.room-for__text {
+    margin-right: auto;
+}
