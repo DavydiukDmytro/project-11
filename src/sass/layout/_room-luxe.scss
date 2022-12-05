@@ -1,15 +1,19 @@
-container--hiden{
-  overflow: hidden;
+.container--hiden{
+overflow: hidden;
 }
+
 .section-room{
     position: relative;
     padding-bottom: 32px;
 
-    @media screen and (min-width:$tablet) {
-        padding-bottom: 40px;
-    }
-    
-    
+    background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
+@media (min-width: $tablet){
+    padding-bottom: 40px;
+    background: repeating-linear-gradient(90deg, #0000, #0000 261px, #bababa66 264px 227px);
+}
+@media (min-width: $desktop){
+    background: repeating-linear-gradient(90deg, #0000, #0000 328px, #bababa66 330px 317px);
+}
 }
 .room-luxe{
     
