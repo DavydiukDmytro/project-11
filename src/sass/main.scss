@@ -11,12 +11,17 @@
 // Підключення компонентів
 @import './components/buttons';
 @import './components/container';
+@import './components/section';
+// Contacts
+@import './index/contacts/contacts';
 // Header
 @import './header/header';
 // Main
-
+@import './hero/hero';
+@import './hero/hero-room';
+@import './layout/index';
+@import './layout/room-luxe';
 // Footer
 @import './footer/footer';
-
-// Kitchen 
+@import './components/menu';
 @import './about-our-kitchen';
