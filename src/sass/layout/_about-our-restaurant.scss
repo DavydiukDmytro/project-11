@@ -243,34 +243,57 @@
 }
 
 
-// слайдер
+
+
+// кнопки слайдера
+
+.image-slider__wrapper {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
+}
+
+.image-slider__button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+// js slider
 
 .image-slider {
-    height: 297px;
+    overflow: hidden;
+
 
     @media screen and (min-width: 1024px) {
         position: absolute;
         right: 13px;
         bottom: -230px;
-        height: 258px;
     }
 
     @media screen and (min-width: 1280px) {
         right: 0;
         bottom: -175px;
-        height: 322px;
 
     }
 
 }
 
-.image-slider__container {
+.image-slider__list {
+    gap: 25px;
+
+    @media screen and (min-width: 1024px) {
+        gap: 40px;
+    }
+
     margin-bottom: 20px;
 
-    @media screen and (max-width: 1023px) {
-        position: relative;
-        height: 245px;
-    }
 
     @media screen and (min-width: 1024px) {
         margin-bottom: 32px;
@@ -279,28 +302,11 @@
     @media screen and (min-width: 1280px) {
         margin-bottom: 36px;
     }
-}
 
-.image-slider__list {
-    display: flex;
-    justify-content: flex-end;
-    gap: 25px;
-
-    @media screen and (max-width: 1023px) {
-        position: absolute;
-        right: -15px;
-        top: 0;
-    }
-
-    @media screen and (min-width: 1024px) {
-        gap: 40px;
-    }
 }
 
 .image-slider__item {
-
     background: #DADADA;
-
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     overflow: hidden;
@@ -319,21 +325,79 @@
     }
 }
 
-// кнопки слайдера
-.image-slider__wrapper {
-    display: flex;
-    gap: 32px;
-    justify-content: flex-end;
-}
 
-.image-slider__button {
-    padding: 0;
-    border: none;
-    background-color: transparent;
+// слайдер макет без js
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .image-slider {
+//     height: 297px;
 
-    cursor: pointer;
-}
+//     @media screen and (min-width: 1024px) {
+//         position: absolute;
+//         right: 13px;
+//         bottom: -230px;
+//         height: 258px;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         right: 0;
+//         bottom: -175px;
+//         height: 322px;
+
+//     }
+
+// }
+
+// .image-slider__container {
+//     margin-bottom: 20px;
+
+//     @media screen and (max-width: 1023px) {
+//         position: relative;
+//         height: 245px;
+//     }
+
+//     @media screen and (min-width: 1024px) {
+//         margin-bottom: 32px;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         margin-bottom: 36px;
+//     }
+// }
+
+// .image-slider__list {
+//     display: flex;
+//     justify-content: flex-end;
+//     gap: 25px;
+
+//     @media screen and (max-width: 1023px) {
+//         position: absolute;
+//         right: -15px;
+//         top: 0;
+//     }
+
+//     @media screen and (min-width: 1024px) {
+//         gap: 40px;
+//     }
+// }
+
+// .image-slider__item {
+
+//     background: #DADADA;
+
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+//     border-radius: 2px;
+//     overflow: hidden;
+//     z-index: 1;
+
+//     @media screen and (max-width: 1023px) {
+//         max-width: 245px;
+//     }
+
+//     @media screen and (min-width: 1024px) {
+//         max-width: 194px;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         max-width: 254px;
+//     }
+// }
