@@ -6,7 +6,6 @@
     text-transform: $transform;
     text-decoration: $textdecor;
 }
-
 @mixin for-phone-only {
     @media (max-width: $mobile) {
         @content;

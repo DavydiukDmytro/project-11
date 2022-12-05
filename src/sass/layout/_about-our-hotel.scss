@@ -1,0 +1,293 @@
+// -------------About uor hotel-----------------
+
+.about-hotel {
+  position: relative;
+
+  padding-top: 18px;
+  padding-bottom: 20px;
+  background-color: #fffdee;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 50px;
+  }
+
+  &__conteiner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__intro {
+    margin-bottom: 6px;
+
+    text-align: end;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #b4b4b4;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 4px;
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 16px;
+
+    text-align: end;
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+
+    letter-spacing: 0.3em;
+
+    color: #494848;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+      line-height: 69px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // ----------- Hotel badroom------------------
+
+  &__badroom-conteiner {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+
+      margin-bottom: 338px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 331px;
+    }
+  }
+
+  &__discription {
+    width: 242px;
+    margin-left: auto;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+
+    color: #5f5f5f;
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 419px;
+      height: 80px;
+
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 488px;
+      height: 88px;
+    }
+  }
+
+  &__badroom-img {
+    background: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: 0;
+      left: 112px;
+
+      transform: translateY(-144px);
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 180px;
+    }
+  }
+
+  // -------------Hotel lobby-----------------
+
+  &__lobby {
+    position: relative;
+
+    display: flex;
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__discription-lobby {
+    width: 163px;
+    height: 120px;
+    margin-right: 21px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    color: #c79002;
+
+    @media screen and (min-width: 1024px) {
+      width: 312px;
+      height: 122px;
+      margin-top: 0;
+      margin-bottom: 154px;
+      margin-left: 220px;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 294px;
+      margin-bottom: 116px;
+    }
+  }
+
+  &__lobby-img {
+    background: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: -196px;
+      right: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -169px;
+    }
+  }
+
+  // ----------------Swiper--------------
+
+  .swiper {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1023px) {
+      position: relative;
+      transform: translateX(-25%);
+    }
+
+    // @media screen and (min-width: 1024px) {
+    //   display: inline-block;
+    // }
+
+    &__photos {
+      display: inline-flex;
+      gap: 20px;
+
+      @media screen and (min-width: 1024px) {
+        gap: 40px;
+
+        margin-bottom: 32px;
+      }
+    }
+
+    &__img {
+      background: #dadada;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      gap: 32px;
+
+      &--left {
+        background-color: inherit;
+        border: none;
+      }
+
+      &--right {
+        background-color: inherit;
+        border: none;
+      }
+    }
+  }
+
+  // ---------------Lines-----------------
+
+  &__lines {
+    position: absolute;
+    top: 0;
+
+    display: block;
+
+    height: 100%;
+
+    border-right: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+  }
+
+  &__lines--start {
+    left: 34%;
+
+    @media screen and (min-width: 1024px) {
+      left: 27%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 26%;
+    }
+  }
+
+  &__lines--centre {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+
+      left: 50%;
+    }
+  }
+
+  &__lines--end {
+    right: 34%;
+
+    @media screen and (min-width: 1024px) {
+      right: 27%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 26%;
+    }
+  }
+}
+
+// -----------Utils-----------------
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
