@@ -1,6 +1,16 @@
 container--hiden{
   overflow: hidden;
 }
+.section-room{
+    position: relative;
+    padding-bottom: 32px;
+
+    @media screen and (min-width:$tablet) {
+        padding-bottom: 40px;
+    }
+    
+    
+}
 .room-luxe{
     
     &__overhead{
@@ -142,26 +152,24 @@ container--hiden{
         
         }
 }
-button{
-    background-color: #FFFDEE;;
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-.slider{
+
+.slider-room{
     display: flex;
     justify-content: end;
 
     gap: 32px;
-
+}
 @media screen and (min-width:$tablet){
     .galary-container{
         justify-content: end;
     }
 }
-}
 .slider-button {
+    background-color: #FFFDEE;;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: 0;
         &__arrow-icon {
         fill: $black;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -172,7 +180,12 @@ button{
     
 }
 .thumb-room{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding-top: 20px;
+
 
     &__link{
         display: block;
@@ -186,9 +199,7 @@ button{
     }
     @media screen and (min-width:$tablet){
         display: inline-flex;
-        flex-direction: column;
-        gap: 16px;
-        
+        padding-top: 0;        
         margin-top: 217px;
 
         &__link{
@@ -203,13 +214,14 @@ button{
     
         }
     }
-    @media screen and (min-width:$tablet){
+    @media screen and (min-width:$desktop){
         margin-top: 260px;
     }
 
 }
 .galary-thumb{
     position: relative;
+    overflow: hidden;
     padding-top: 32px;
     padding-bottom: 20px;
     @media screen and (min-width:$tablet) {
@@ -223,12 +235,14 @@ button{
         padding-bottom: 40px;
     }
 }
+.galary-container{
+@media screen and (max-width:$tablet){
+    max-width: 269px;
+    }
 @media screen and (min-width:$tablet){
-    .galary-container{
-        display: inline-flex;
-        flex-direction: column;
-        }
-    
+    display: inline-flex;
+    flex-direction: column;
+    }
 }
 
 @media screen and (min-width:$tablet){
