@@ -2,6 +2,18 @@ container--hiden{
   overflow: hidden;
 }
 .room-luxe{
+    .slider {
+        display: flex;
+        justify-content: end;
+
+        gap: 32px;
+
+        @media screen and (min-width:$tablet) {
+            .galary-container {
+                justify-content: end;
+            }
+        }
+    }
     
     &__overhead{
         padding-top: 32px;
@@ -149,18 +161,18 @@ button{
     margin: 0;
     border: 0;
 }
-.slider{
-    display: flex;
-    justify-content: end;
+// .slider{
+//     display: flex;
+//     justify-content: end;
 
-    gap: 32px;
+//     gap: 32px;
 
-@media screen and (min-width:$tablet){
-    .galary-container{
-        justify-content: end;
-    }
-}
-}
+// @media screen and (min-width:$tablet){
+//     .galary-container{
+//         justify-content: end;
+//     }
+// }
+// }
 .slider-button {
         &__arrow-icon {
         fill: $black;

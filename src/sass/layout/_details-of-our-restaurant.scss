@@ -28,6 +28,17 @@
         background-size: cover;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @include for-tablet {
+        .container {
+            flex-direction: row;
+        }
+    }
+
     .restaurant__details {
         margin-left: 140px;
 
@@ -198,15 +209,6 @@
         }
     }
 
-    .container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    @include for-tablet {
-        .container {
-            flex-direction: row;
-        }
-    }
+    
 }
 
