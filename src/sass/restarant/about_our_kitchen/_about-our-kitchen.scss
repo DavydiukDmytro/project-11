@@ -1,5 +1,4 @@
 .kitchen {
-    background: $primary-bg;
     position: relative;
 
     .btn {
@@ -22,17 +21,17 @@
         margin: 12px 0;
     }
 
-    .container {
-            background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
+    // .container {
+    //         background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
 
-            @include for-tablet {
-                background: repeating-linear-gradient(90deg, #0000, #0000 261px, #bababa66 264px 227px)
-            }
+    //         @include for-tablet {
+    //             background: repeating-linear-gradient(90deg, #0000, #0000 261px, #bababa66 264px 227px)
+    //         }
 
-            @include for-desktop {
-                background: repeating-linear-gradient(90deg, #0000, #0000 328px, #bababa66 330px 317px);
-            }
-    }
+    //         @include for-desktop {
+    //             background: repeating-linear-gradient(90deg, #0000, #0000 328px, #bababa66 330px 317px);
+    //         }
+    // }
 
     &__chiefs {
         display: flex;
