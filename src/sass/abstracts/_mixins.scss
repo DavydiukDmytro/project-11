@@ -23,4 +23,6 @@
 @mixin for-desktop {
     @media (min-width: $desktop) {
         @content;
-    }}
+    }
+
+}

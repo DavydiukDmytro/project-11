@@ -16,6 +16,18 @@ overflow: hidden;
 }
 }
 .room-luxe{
+    .slider {
+        display: flex;
+        justify-content: end;
+
+        gap: 32px;
+
+        @media screen and (min-width:$tablet) {
+            .galary-container {
+                justify-content: end;
+            }
+        }
+    }
     
     &__overhead{
         padding-top: 32px;
@@ -156,7 +168,6 @@ overflow: hidden;
         
         }
 }
-
 .slider-room{
     display: flex;
     justify-content: end;
