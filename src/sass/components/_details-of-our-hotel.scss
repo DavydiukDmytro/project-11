@@ -189,6 +189,10 @@ margin-top: 24px;
 
 .hotel-details__btns {
 margin: 80px 0 0 89px;
+
+@media screen and (min-width: 1024px) {
+margin: 160px 0 0 32px;
+}
 }
 
 .hotel-details__buttons:nth-last-of-type(2) {
