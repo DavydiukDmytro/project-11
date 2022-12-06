@@ -1,32 +1,32 @@
 .restaurant {
     padding: 40px 0 40px 0;
     position: relative;
-    background: 
-    repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px),
-    linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    // repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px),
+        // linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url('../images/details-of-our-restaurant/mobile/restdetailsbackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    @include for-tablet {
-        padding: 48px 0 40px 0;
-        background: 
-        repeating-linear-gradient(90deg, #0000, #0000 261px, #bababa66 264px 227px),
-                linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url('../images/details-of-our-restaurant/tablet/restdetailsbackground@2x.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        // background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
-    }
+    // @include for-tablet {
+    //     padding: 48px 0 40px 0;
+    //     background: 
+    //     repeating-linear-gradient(90deg, #0000, #0000 261px, #bababa66 264px 227px),
+    //             linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    //             url('../images/details-of-our-restaurant/tablet/restdetailsbackground@2x.jpg');
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     // background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
+    // }
 
-    @include for-desktop {
-        background: repeating-linear-gradient(90deg, #0000, #0000 328px, #bababa66 330px 317px),
-        linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url('../images/details-of-our-restaurant/desktop/restdetailsbackground.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    // @include for-desktop {
+    //     background: repeating-linear-gradient(90deg, #0000, #0000 328px, #bababa66 330px 317px),
+    //     linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    //         url('../images/details-of-our-restaurant/desktop/restdetailsbackground.jpg');
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
 
     .container {
         display: flex;
