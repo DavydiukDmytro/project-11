@@ -2,41 +2,41 @@
     @media (min-width: 1280px) {
         position: relative;
     }
-    &:before {
-    @media (min-width: 1280px) {
-        position: absolute;
-        content: '';
-        top: -48px;
-        right: 25%;
-        width: 1px;
-        height: 1067px;
-        background-color: rgba(186, 186, 186, 0.4);
-        filter: blur(0.5px);}
-    }
-    &::after {
-        @media (min-width: 1280px) {
-        position: absolute;
-        content: '';
-        top: -48px;
-        left: 50%;
-        width: 1px;
-        height: 1067px;
-        background-color: rgba(186, 186, 186, 0.4);
-        filter: blur(0.5px);
-    }
-    }
-    &__item1::before {
-        @media (min-width: 1280px) {
-        position: absolute;
-        content: '';
-        top: -48px;
-        left: 25%;
-        width: 1px;
-        height: 1067px;
-        background-color: rgba(186, 186, 186, 0.4);
-        filter: blur(0.5px);
-        }
-        }
+    // &:before {
+    // @media (min-width: 1280px) {
+    //     position: absolute;
+    //     content: '';
+    //     top: -48px;
+    //     right: 25%;
+    //     width: 1px;
+    //     height: 1067px;
+    //     background-color: rgba(186, 186, 186, 0.4);
+    //     filter: blur(0.5px);}
+    // }
+    // &::after {
+    //     @media (min-width: 1280px) {
+    //     position: absolute;
+    //     content: '';
+    //     top: -48px;
+    //     left: 50%;
+    //     width: 1px;
+    //     height: 1067px;
+    //     background-color: rgba(186, 186, 186, 0.4);
+    //     filter: blur(0.5px);
+    // }
+    // }
+    // &__item1::before {
+    //     @media (min-width: 1280px) {
+    //     position: absolute;
+    //     content: '';
+    //     top: -48px;
+    //     left: 25%;
+    //     width: 1px;
+    //     height: 1067px;
+    //     background-color: rgba(186, 186, 186, 0.4);
+    //     filter: blur(0.5px);
+    //     }
+    //     }
     &__title {
         margin-bottom: 16px;
         font-family: 'Times New Roman';
