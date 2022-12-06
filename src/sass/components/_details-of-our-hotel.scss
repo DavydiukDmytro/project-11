@@ -173,6 +173,12 @@ max-width: 270px;
 }
 }
 
+.hotel-details__item:last-child {
+@media screen and (max-width: 1023px) {
+display: none;
+}
+}
+
 .hotel-details__arrow {
 fill: #fff;
 }
