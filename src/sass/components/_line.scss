@@ -7,7 +7,9 @@
     background-color: rgba(186, 186, 186, 0.2);
     box-shadow: 0px 0px 1px 1px rgba(186, 186, 186, 0.2);
     z-index: 1;
-    
+    &--short{
+        height: 66%;
+    }
     &--body{
         z-index: -1;
     }
