@@ -148,6 +148,8 @@
     top: 65px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+    z-index: 1;
+    
     @media (min-width:$tablet) {
              gap: 10px;
              right: auto;
