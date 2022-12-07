@@ -9,41 +9,42 @@
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    // @include for-tablet {
-    //     padding: 48px 0 40px 0;
-    //     background: 
-    //     repeating-linear-gradient(90deg, #0000, #0000 261px, #bababa66 264px 227px),
-    //             linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    //             url('../images/details-of-our-restaurant/tablet/restdetailsbackground@2x.jpg');
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     // background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
-    // }
-
-    // @include for-desktop {
-    //     background: repeating-linear-gradient(90deg, #0000, #0000 328px, #bababa66 330px 317px),
-    //     linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    //         url('../images/details-of-our-restaurant/desktop/restdetailsbackground.jpg');
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
-    &__content{
-        margin-left: 17px;
+    @include for-tablet {
+        padding: 48px 0 40px 0;
+        background: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('../images/details-of-our-restaurant/tablet/restdetailsbackground@2x.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
     }
+
+    @include for-desktop {
+        
+        background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url('../images/details-of-our-restaurant/desktop/restdetailsbackground@2x.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 
     .container {
         display: flex;
         flex-direction: column-reverse;
-    }
 
-    @include for-tablet {
-        .container {
+        @include for-tablet {
             flex-direction: row;
+        }
+        
+        @include for-desktop {
+            padding-right: 52px;
         }
     }
 
     .restaurant__details {
-        margin-left: 140px;
+        margin-left: 125px;
+
 
         &__title {
                 margin-top: 12px;
@@ -82,7 +83,7 @@
         }
 
         @include for-tablet {
-            margin-left: 0;
+            margin-left: -4px;
 
             &__subtitle {
                 font-size: 64px;
@@ -104,6 +105,10 @@
             }
         }
 
+        @include for-desktop {
+                margin-left: 20px;
+        }
+
     }
 
 
@@ -111,6 +116,7 @@
     .carousel {
         overflow: hidden;
         margin: 0 -15px;
+        
 
         * {
             box-sizing: border-box;
@@ -160,7 +166,7 @@
                 }
 
                 @include for-desktop {
-                    margin-right: 70px;
+                    margin-right: 86px;
                 }
             }
 
@@ -212,8 +218,7 @@
         }
 
         @include for-desktop {
-            max-width: 876px;
-            margin-left: 15px;
+            max-width: 874px;
         }
     }
 
@@ -231,7 +236,7 @@
 
         @include for-tablet {
             align-self: flex-end;
-            margin-bottom: 60px;
+            margin-bottom: 75px;
         }
     }
 
