@@ -137,6 +137,10 @@
 
         font-size: 64px;
     }
+    @media screen and (min-width: $desktop) {
+        color: $secondary-text-logo;
+    }
+        
 }
 
 .restaurant-section__text {
