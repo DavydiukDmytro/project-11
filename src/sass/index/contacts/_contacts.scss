@@ -111,6 +111,10 @@
     margin-bottom: 24px;
     align-items: center;
 
+    @media screen and (max-width: 1023px){
+        margin-bottom: 16px;
+    }
+
     @media screen and (min-width: $tablet) {
         flex-direction: column;
         align-items: flex-start;
@@ -190,6 +194,10 @@
 
 .contacts__location {
     padding-bottom: 284px;
+      @media screen and (max-width: 1023px){
+        margin-bottom: 16px;
+    }
+
 
     @media screen and (min-width: $tablet) {
         padding-bottom: 44px;
@@ -213,6 +221,11 @@
     margin-top: 48px;
     margin-left: 124px;
 
+    @media screen and (max-width: 1023px) {
+            margin-top: 16px;
+            justify-content: left;
+        }
+
     @media screen and (min-width: $tablet) {
         width: 285px;
         height: 56px;
@@ -229,7 +242,7 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: #494848;
-    padding-right: 33px;
+    margin-left: 44px;
 
     @media screen and (min-width: $tablet) {
         width: 233px;

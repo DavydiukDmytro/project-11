@@ -13,6 +13,12 @@
     }
 }
 
+.container {
+    @media screen and (max-width: 1023px) {
+        overflow: hidden;
+    }   
+}
+
 // контейнер для декоративних ліній
 
 .restaurant-section__container {
@@ -291,6 +297,8 @@
     gap: 25px;
 
     @media screen and (max-width: 1023px) {
+        transform: translateX(36%);
+        width: 515px;
         position: absolute;
         right: -15px;
         top: 0;

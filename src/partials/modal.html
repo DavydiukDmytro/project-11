@@ -1,0 +1,268 @@
+<div class="backdrop" id="tableOrderModal">
+  <div class="modal">
+    <span class="close-button tableOrderClose">
+      <svg class="close-button__icon" width="24" height="24">
+        <use href="./images/icon.svg#icon-exit-modal"></use>
+      </svg>
+    </span>
+    <span class="order-form__title">Забронювати столик</span>
+    <form id="table-order-form" class="order-form" name="table-order-form">
+      <div role="group" class="order-form__item order-form__tableorder-item">
+        <input
+          class="order-form__input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ваше ім'я"
+          autocomplete="on"
+          pattern="(^[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,}\s[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,})"
+          minlength="2"
+          maxlength="40"
+          title="Формат'Ім'я Прізвище'"
+          required
+        />
+        <label for="name" class="order-form__label"
+          >На кого забронювати столик?
+        </label>
+      </div>
+      <div role="group" class="order-form__item order-form__tableorder-item">
+        <input
+          class="order-form__input"
+          type="tel"
+          name="tel"
+          id="phone"
+          autocomplete="off"
+          value="+38 (___) ___-__-__"
+          title="Введіть номер у форматі +38 (099) 999-99-99"
+          required
+        />
+        <label for="phone" class="order-form__label">Номер телефону </label>
+      </div>
+      <div
+        role="group"
+        class="order-form__item order-form__select-wrapper order-form__tableorder-item"
+      >
+        <select
+          name="number-of-people"
+          id="number-of-people"
+          class="order-form__input order-form__input-select"
+          value="Сьогодні"
+        >
+          <option value="2_persons" selected>2</option>
+          <option value="3_persons">3</option>
+          <option value="4_persons">4</option>
+          <option value="5_persons">5</option>
+          <option value="6_persons">6</option>
+        </select>
+
+        <label for="number-of-people" class="order-form__label"
+          >Столик на яку кількість осіб?
+        </label>
+      </div>
+      <div
+        role="group"
+        class="order-form__item order-form__select-wrapper order-form__tableorder-item"
+      >
+        <input
+          id="reservation-date"
+          name="reservation-date"
+          type="date"
+          min="2022-12-01"
+          max="2023-12-01"
+          class="order-form__input"
+          title="Оберіть дату"
+          required
+        />
+        <label for="reservation-date" class="order-form__label"
+          >На яку дату бронювати?</label
+        >
+      </div>
+    </form>
+    <button
+      form="table-order-form"
+      type="submit"
+      class="order-form__button mimino-buttons mimino-buttons--booking mimino-buttons--booking-modal"
+    >
+      Оформити бронювання
+    </button>
+  </div>
+</div>
+<div class="backdrop" id="roomOrderModal">
+  <div class="modal">
+    <span class="close-button roomOrderClose">
+      <svg class="close-button__icon" width="24" height="24">
+        <use href="./images/icon.svg#icon-exit-modal"></use>
+      </svg>
+    </span>
+    <span class="order-form__title">Забронювати номер</span>
+    <form id="room-order-form" class="order-form" name="room-order-form">
+      <div role="group" class="order-form__item order-form__roomorder-item">
+        <input
+          class="order-form__input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ваше ім'я"
+          autocomplete="on"
+          pattern="(^[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,}\s[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,})"
+          minlength="2"
+          maxlength="40"
+          title="Формат'Ім'я Прізвище'"
+          required
+        />
+        <label for="name" class="order-form__label"
+          >На кого забронювати номер?
+        </label>
+      </div>
+      <div role="group" class="order-form__item order-form__roomorder-item">
+        <input
+          class="order-form__input"
+          type="text"
+          name="tel"
+          id="phone"
+          autocomplete="off"
+          value="+38 (___) ___-__-__"
+          pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          title="Введіть номер у форматі +38 (099) 999-99-99"
+          required
+        />
+        <label for="phone" class="order-form__label">Номер телефону </label>
+      </div>
+      <div
+        role="group"
+        class="order-form__item order-form__select-wrapper order-form__roomorder-item"
+      >
+        <select
+          name="room-type"
+          id="room-type"
+          class="order-form__input"
+          required
+        >
+          <option disabled selected value>- Оберіть -</option>
+          <option value="2_rooms_lux">Двомісний люкс</option>
+          <option value="3_rooms">Трьохмісний номер</option>
+          <option value="2_rooms">Двомісний номер</option>
+        </select>
+        <label for="room-type" class="order-form__label"
+          >Категорія номеру</label
+        >
+      </div>
+      <div
+        role="group"
+        class="order-form__item order-form__select-wrapper order-form__roomorder-item"
+      >
+        <input
+          id="check-in-date"
+          name="check-in-date"
+          class="order-form__input"
+          type="date"
+          min="2022-12-01"
+          max="2023-12-01"
+          title="Оберіть дату"
+          required
+        />
+        <label for="check-in-date" class="order-form__label">Дата заїзду</label>
+      </div>
+      <div
+        role="group"
+        class="order-form__item order-form__select-wrapper order-form__roomorder-item"
+      >
+        <input
+          id="check-out-date"
+          name="check-out-date"
+          class="order-form__input"
+          type="date"
+          min="2022-12-01"
+          max="2023-12-01"
+          title="Оберіть дату"
+          required
+        />
+        <label for="check-out-date" class="order-form__label"
+          >Дата виїзду</label
+        >
+      </div>
+    </form>
+    <button
+      form="room-order-form"
+      type="submit"
+      class="order-form__button mimino-buttons mimino-buttons--booking mimino-buttons--booking-modal"
+    >
+      Оформити бронювання
+    </button>
+  </div>
+</div>
+<div class="backdrop" id="roomPriceModal">
+  <div class="modal">
+    <span class="close-button roomPriceClose">
+      <svg class="close-button__icon" width="24" height="24">
+        <use href="./images/icon.svg#icon-exit-modal"></use>
+      </svg>
+    </span>
+    <span class="order-form__title">Ціни на номер</span>
+    <form
+      id="rooms-prices-form"
+      class="order-form"
+      name="rooms-prices-form"
+      novalidate
+    >
+      <div
+        role="group"
+        class="order-form__item order-form__select-wrapper order-form__roomprice-item"
+      >
+        <select
+          name="room-type"
+          id="room-type"
+          class="order-form__input"
+          required
+        >
+          <option disabled selected value>- Оберіть -</option>
+          <option value="2_rooms_lux">Двомісний люкс</option>
+          <option value="3_rooms">Трьохмісний номер</option>
+          <option value="2_rooms">Двомісний номер</option>
+        </select>
+        <label for="room-type" class="order-form__label"
+          >Категорія номеру</label
+        >
+      </div>
+      <div
+        role="group"
+        class="order-form__item order-form__select-wrapper order-form__roomprice-item"
+      >
+        <select
+          name="number-of-nights"
+          id="number-of-nights"
+          class="order-form__input"
+          required
+        >
+          <option disabled selected value>- Оберіть -</option>
+          <option value="1_night">1</option>
+          <option value="2_night">2</option>
+          <option value="3_night">3</option>
+          <option value="4_night">4</option>
+          <option value="5_night">5</option>
+        </select>
+        <label for="number-of-nights" class="order-form__label"
+          >Кількість ночей</label
+        >
+      </div>
+      <div role="group" class="order-form__item order-form__roomprice-item">
+        <input
+          class="order-form__input"
+          type="text"
+          name="cost"
+          id="cost"
+          placeholder="1000"
+          readonly
+        />
+        <label for="cost" class="order-form__label">грн </label>
+      </div>
+    </form>
+    <button
+      form="rooms-prices-form"
+      type="submit"
+      class="order-form__button mimino-buttons mimino-buttons--booking mimino-buttons--booking-modal"
+    >
+      Забронювати номер
+    </button>
+  </div>
+</div>

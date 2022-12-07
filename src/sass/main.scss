@@ -12,7 +12,8 @@
 @import './components/buttons';
 @import './components/container';
 @import './components/section';
-@import'./components/line';
+@import './components/line';
+@import './components/modal';
 // Contacts
 @import './index/contacts/contacts';
 // Header
@@ -23,6 +24,7 @@
 @import './layout/index';
 @import './components/details-of-our-hotel';
 @import './layout/room-luxe';
+@import './layout/room-for';
 // Amenities
 @import './amenities/section-amenities';
 @import './amenities/amenities-box';

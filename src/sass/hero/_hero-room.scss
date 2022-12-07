@@ -97,6 +97,7 @@
 }
 
 .slider-btn-right{
+    cursor: pointer;
     padding: 0;
     width: 40px;
     height: 40px;
@@ -113,6 +114,7 @@
     }
 }
 .slider-btn-left{
+    cursor: pointer;
     padding: 0;
     width: 40px;
     height: 40px;
@@ -129,6 +131,12 @@
     }
 }
 
+.slider-btn-left:hover, .slider-btn-left:focus,
+.slider-btn-right:hover,
+.slider-btn-right:focus{
+    fill: $secondary-text;
+}
+
 
 .hero-room__address{
     display: flex;
@@ -140,6 +148,8 @@
     top: 65px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+    z-index: 1;
+    
     @media (min-width:$tablet) {
              gap: 10px;
              right: auto;

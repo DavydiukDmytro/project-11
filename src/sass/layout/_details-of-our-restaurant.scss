@@ -20,12 +20,14 @@
     }
 
     @include for-desktop {
-        
-        background: 
+        background:
         linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url('../images/details-of-our-restaurant/desktop/restdetailsbackground@2x.jpg');
+            url('../images/details-of-our-restaurant/desktop/restdetailsbackground.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    &__content{
+        margin-left: 17px;
     }
     
 
@@ -203,6 +205,12 @@
             .prev-btn-icon,
             .next-btn-icon {
                 fill: #fff;
+            }
+            .prev-btn-icon:hover,
+            .next-btn-icon:hover, 
+            .prev-btn-icon:focus,
+            .next-btn-icon:focus {
+                fill: $accent;
             }
 
             @include for-tablet {
