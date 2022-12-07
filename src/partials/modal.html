@@ -15,9 +15,10 @@
           id="name"
           placeholder="Ваше ім'я"
           autocomplete="on"
-          pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}"
-          minlength="3"
-          maxlength="30"
+          pattern="(^[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,}\s[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,})"
+          minlength="2"
+          maxlength="40"
+          title="Формат'Ім'я Прізвище'"
           required
         />
         <label for="name" class="order-form__label"
@@ -32,7 +33,6 @@
           id="phone"
           autocomplete="off"
           value="+38 (___) ___-__-__"
-          pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
           title="Введіть номер у форматі +38 (099) 999-99-99"
           required
         />
@@ -103,10 +103,11 @@
           name="name"
           id="name"
           placeholder="Ваше ім'я"
-          autocomplete="onn"
-          minlength="3"
-          maxlength="30"
-          pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}"
+          autocomplete="on"
+          pattern="(^[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,}\s[A-Za-zА-Яа-яґҐїЇєЄіІёЁ'-]{2,})"
+          minlength="2"
+          maxlength="40"
+          title="Формат'Ім'я Прізвище'"
           required
         />
         <label for="name" class="order-form__label"
@@ -198,7 +199,12 @@
       </svg>
     </span>
     <span class="order-form__title">Ціни на номер</span>
-    <form id="rooms-prices-form" class="order-form" name="rooms-prices-form">
+    <form
+      id="rooms-prices-form"
+      class="order-form"
+      name="rooms-prices-form"
+      novalidate
+    >
       <div
         role="group"
         class="order-form__item order-form__select-wrapper order-form__roomprice-item"
@@ -214,7 +220,6 @@
           <option value="3_rooms">Трьохмісний номер</option>
           <option value="2_rooms">Двомісний номер</option>
         </select>
-
         <label for="room-type" class="order-form__label"
           >Категорія номеру</label
         >
@@ -247,6 +252,7 @@
           name="cost"
           id="cost"
           placeholder="1000"
+          readonly
         />
         <label for="cost" class="order-form__label">грн </label>
       </div>
