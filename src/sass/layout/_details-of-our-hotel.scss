@@ -192,21 +192,6 @@ margin-top: 24px;
 }
 }
 
-.image-slider__buttons {
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-cursor: pointer;
-}
-
-.image-slider__buttons:hover,
-.image-slider__buttons:focus {
-color: $accent;
-}
-
-.hotel-details__arrow:hover,
-.hotel-details__arrow:focus {
-fill: $accent;
-}
-
 .hotel-details__btns {
 margin: 80px 0 0 89px;
 
