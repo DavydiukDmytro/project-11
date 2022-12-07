@@ -220,6 +220,25 @@ section {
   fill: #F3C653;
 }
 
+.swipe-button--active:hover,
+.swipe-button--active:focus {
+  color: #F3C653;
+}
+
+.swipe-button--active {
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swipe-button--svg:focus,
+.swipe-button--svg:hover {
+  fill: #F3C653;
+}
+
+.swipe-button--svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -254,6 +273,9 @@ section {
   background-color: rgba(186, 186, 186, 0.2);
   box-shadow: 0px 0px 1px 1px rgba(186, 186, 186, 0.2);
   z-index: 1;
+}
+.line-d--short {
+  height: 66%;
 }
 .line-d--body {
   z-index: -1;
@@ -653,6 +675,11 @@ section {
   margin-bottom: 24px;
   align-items: center;
 }
+@media screen and (max-width: 1023px) {
+  .contacts__rest {
+    margin-bottom: 16px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .contacts__rest {
     flex-direction: column;
@@ -736,6 +763,11 @@ section {
 .contacts__location {
   padding-bottom: 284px;
 }
+@media screen and (max-width: 1023px) {
+  .contacts__location {
+    margin-bottom: 16px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .contacts__location {
     padding-bottom: 44px;
@@ -760,6 +792,12 @@ section {
   margin-top: 48px;
   margin-left: 124px;
 }
+@media screen and (max-width: 1023px) {
+  .contacts__field-location {
+    margin-top: 16px;
+    justify-content: left;
+  }
+}
 @media screen and (min-width: 1024px) {
   .contacts__field-location {
     width: 285px;
@@ -777,7 +815,7 @@ section {
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #494848;
-  padding-right: 33px;
+  margin-left: 44px;
 }
 @media screen and (min-width: 1024px) {
   .contacts__address {
@@ -1214,7 +1252,7 @@ section {
     transform: none;
     gap: 40px;
     left: 469px;
-    bottom: 112px;
+    bottom: 64px;
   }
 }
 @media (min-width: 1280px) {
@@ -1472,6 +1510,7 @@ section {
   top: 65px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  z-index: 1;
 }
 @media (min-width: 1024px) {
   .hero-room__address {
@@ -1559,6 +1598,11 @@ section {
   .restaurant-section__logo {
     margin-bottom: 24px;
     font-size: 64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant-section__logo {
+    color: #828282;
   }
 }
 
@@ -1815,6 +1859,7 @@ section {
 }
 @media screen and (min-width: 1280px) {
   .about-hotel__header {
+    color: #828282;
     margin-bottom: 24px;
   }
 }
@@ -2056,7 +2101,6 @@ section {
 }
 
 .hotel-details__subtitle {
-  font-family: "Monsterrat";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2190,7 +2234,7 @@ section {
 }
 
 .hotel-details__btns {
-  margin: 80px 0 0 89px;
+  margin: 32px 0 0 89px;
 }
 @media screen and (min-width: 1024px) {
   .hotel-details__btns {
@@ -2215,17 +2259,17 @@ section {
 .section-room {
   position: relative;
   padding-bottom: 32px;
-  background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 138px, rgba(186, 186, 186, 0.4) 140px 141px);
+  margin: 0 auto;
 }
 @media (min-width: 1024px) {
   .section-room {
     padding-bottom: 40px;
-    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 261px, rgba(186, 186, 186, 0.4) 264px 227px);
+    max-width: 1024px;
   }
 }
 @media (min-width: 1280px) {
   .section-room {
-    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 328px, rgba(186, 186, 186, 0.4) 330px 317px);
+    max-width: 1280px;
   }
 }
 
@@ -2448,6 +2492,105 @@ section {
     justify-content: space-between;
   }
 }
+.room-for {
+  background-color: #F0ECD6;
+  padding: 72px 0 40px 0;
+}
+
+.room-for__container {
+  position: relative;
+}
+
+.room-for__img {
+  position: absolute;
+  top: -104px;
+  left: 95px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.room-for__text {
+  max-width: 453px;
+  margin-left: auto;
+  margin-bottom: 188px;
+  margin-right: 57px;
+}
+
+.room-for__sub-title {
+  text-align: right;
+  margin-bottom: 4px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #B4B4B4;
+}
+
+.room-for__logo {
+  text-align: right;
+  margin-bottom: 72px;
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 69px;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+
+.room-for__title {
+  margin-bottom: 24px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.room-for__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.room-for__slider {
+  margin-left: auto;
+}
+
+.room-for__buttons {
+  margin-top: 32px;
+}
+
+.room-for__buttons button {
+  margin-top: 48px;
+}
+
+.room-for__slider-img {
+  display: flex;
+}
+
+.room-for__content {
+  display: flex;
+}
+
+.room-for__slider-arrow {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.room-for__icon {
+  margin-top: 40px;
+  fill: #7A7A7A;
+}
+
 .section-amenities {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -2468,42 +2611,6 @@ section {
 @media (min-width: 1280px) {
   .amenities-box {
     position: relative;
-  }
-}
-@media (min-width: 1280px) {
-  .amenities-box:before {
-    position: absolute;
-    content: "";
-    top: -48px;
-    right: 25%;
-    width: 1px;
-    height: 1067px;
-    background-color: rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-  }
-}
-@media (min-width: 1280px) {
-  .amenities-box::after {
-    position: absolute;
-    content: "";
-    top: -48px;
-    left: 50%;
-    width: 1px;
-    height: 1067px;
-    background-color: rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-  }
-}
-@media (min-width: 1280px) {
-  .amenities-box__item1::before {
-    position: absolute;
-    content: "";
-    top: -48px;
-    left: 25%;
-    width: 1px;
-    height: 1067px;
-    background-color: rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
   }
 }
 .amenities-box__title {
@@ -2680,6 +2787,13 @@ section {
     margin-left: 211px;
   }
 }
+.footer__net-item {
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__net-item:hover, .footer__net-item:focus {
+  transform: scale(1.2);
+}
 @media screen and (max-width: 1023px) {
   .footer__nav-list {
     margin-bottom: 28px;
@@ -2698,13 +2812,35 @@ section {
   text-decoration: none;
   position: relative;
 }
+.footer__nav-net {
+  position: relative;
+}
+@media screen and (max-width: 1023px) {
+  .footer__nav-net {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__nav-net {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 137px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__nav-net {
+    margin-left: 201px;
+  }
+}
 .footer__nav-link::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 3px;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   background: rgba(243, 198, 83, 0.8);
   border-radius: 3px;
   transform: scaleX(0);
@@ -2713,73 +2849,40 @@ section {
 .footer__nav-link:hover::after, .footer__nav-link:focus::after {
   transform: scaleX(1);
 }
-.footer__nav-net {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+@media screen and (max-width: 1023px) {
+  .footer__nav-net li:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 @media screen and (min-width: 1024px) {
-  .footer__nav-net {
-    display: none;
+  .footer__nav-net li:not(:first-child) {
+    margin-bottom: 12px;
   }
 }
-.footer__nav-net li:not(:last-child) {
-  margin-right: 20px;
+@media screen and (min-width: 1024px) {
+  .footer__net-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    padding: 7px 12px;
+  }
 }
-.footer__btn {
-  position: relative;
-  margin-left: 137px;
+.footer__net-name {
+  color: #F3C653;
+  text-decoration: none;
+  margin-right: 10px;
 }
 @media screen and (max-width: 1023px) {
-  .footer__btn {
+  .footer__net-name {
     display: none;
   }
-}
-@media screen and (min-width: 1280px) {
-  .footer__btn {
-    margin-left: 201px;
-  }
-}
-.footer__btn li:not(:last-child) {
-  margin-bottom: 12px;
-}
-.footer__btn-link {
-  width: 144px;
-  height: 40px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0E0C07;
-  color: #F3C653;
-  border: 0.5px solid #F3C653;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.footer__btn-item {
-  transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__btn-item:hover, .footer__btn-item:focus {
-  transform: scale(1.2);
-}
-.footer__btn-icon {
-  transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__btn-item:hover .footer__btn-icon, .footer__btn-item:focus .footer__btn-icon {
-  transform: scale(1.2);
-}
-.footer__net-icon {
-  transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__net-icon:hover, .footer__net-icon:focus {
-  transform: scale(1.2);
 }
 
 .menu {
   padding: 32px 0;
+  background-color: #F0ECD6;
 }
 @media (min-width: 1024px) {
   .menu {
@@ -2984,7 +3087,6 @@ tr, td {
 }
 
 .kitchen {
-  background: #FFFDEE;
   position: relative;
 }
 .kitchen .btn {
@@ -3004,19 +3106,6 @@ tr, td {
   letter-spacing: 0.3em;
   color: #494848;
   margin: 12px 0;
-}
-.kitchen .container {
-  background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 138px, rgba(186, 186, 186, 0.4) 140px 141px);
-}
-@media (min-width: 1024px) {
-  .kitchen .container {
-    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 261px, rgba(186, 186, 186, 0.4) 264px 227px);
-  }
-}
-@media (min-width: 1280px) {
-  .kitchen .container {
-    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 328px, rgba(186, 186, 186, 0.4) 330px 317px);
-  }
 }
 .kitchen__chiefs {
   display: flex;
@@ -3209,6 +3298,9 @@ tr, td {
   background-size: cover;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.restaurant__content {
+  margin-left: 17px;
+}
 .restaurant .container {
   display: flex;
   flex-direction: column-reverse;
@@ -3368,7 +3460,7 @@ tr, td {
 @media (min-width: 1280px) {
   .restaurant .carousel {
     max-width: 876px;
-    margin-left: 17px;
+    margin-left: 15px;
   }
 }
 .restaurant .restaurant__buttons {
