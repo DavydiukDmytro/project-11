@@ -1,0 +1,102 @@
+
+
+.room-for {
+  background-color: $secondary-bg;
+  padding: 72px 0 40px 0;
+}
+
+.room-for__container {
+  position: relative;
+}
+
+.room-for__img {
+  position: absolute;
+  top: -104px;
+  left: 95px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+
+.room-for__text {
+  max-width: 453px;
+  margin-left: auto;
+  margin-bottom: 188px;
+  margin-right: 57px;
+}
+
+.room-for__sub-title {
+  text-align: right;
+  margin-bottom: 4px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #B4B4B4;
+}
+
+.room-for__logo {
+  text-align: right;
+  margin-bottom: 72px;
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 69px;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+
+.room-for__title {
+  margin-bottom: 24px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.room-for__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.room-for__slider {
+  margin-left: auto;
+}
+
+.room-for__buttons {
+  margin-top: 32px;
+}
+
+.room-for__buttons button {
+  margin-top: 48px;
+}
+
+.room-for__slider-img {
+  display: flex;
+}
+
+.room-for__content {
+  display: flex;
+
+}
+
+.room-for__slider-arrow {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.room-for__icon {
+  margin-top: 40px;;
+  fill: $primary-text;
+}
