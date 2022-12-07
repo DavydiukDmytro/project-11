@@ -20,9 +20,7 @@
 }
 
 
-.room-for__content {
-  display: flex;
-  flex-direction: column;
+.room-for__text {
   max-width: 453px;
   margin-left: auto;
   margin-bottom: 188px;
@@ -30,7 +28,7 @@
 }
 
 .room-for__sub-title {
-  margin-left: auto;
+  text-align: right;
   margin-bottom: 4px;
   font-family: 'Times New Roman';
   font-style: normal;
@@ -41,7 +39,7 @@
 }
 
 .room-for__logo {
-  margin-left: auto;
+  text-align: right;
   margin-bottom: 72px;
   font-family: 'Film P3';
   font-style: normal;
@@ -79,3 +77,19 @@
 .room-for__slider-img {
   display: flex;
 }
+
+.room-for__content {
+  display: flex;
+}
+
+.room-for__slider-arrow {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.room-for__icon {
+  fill: $primary-text;
+}
+
