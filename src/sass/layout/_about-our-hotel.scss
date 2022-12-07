@@ -5,14 +5,14 @@
 
   padding-top: 18px;
   padding-bottom: 20px;
-  background-color: #fffdee;
+  background-color: $primary-bg;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 120px;
     padding-bottom: 32px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 50px;
   }
 
@@ -25,39 +25,39 @@
     margin-bottom: 6px;
 
     text-align: end;
-    font-family: 'Times New Roman';
+    font-family: 'TimesNewRoman', Times, serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
 
     color: #b4b4b4;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 4px;
       font-size: 32px;
-      line-height: 37px;
+      line-height: 1.15;
     }
   }
 
   &__header {
     margin-bottom: 16px;
 
-    text-align: end;
-    font-family: 'Film P3';
+    direction: rtl;
+    text-indent: -0.3em;
+    font-family: 'Film P3', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    line-height: 43px;
-
+    line-height: 1.08;
     letter-spacing: 0.3em;
 
     color: #494848;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       font-size: 64px;
-      line-height: 69px;
+      line-height: 1.07;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 24px;
     }
   }
@@ -65,16 +65,18 @@
   // ----------- Hotel badroom------------------
 
   &__badroom-conteiner {
+    position: relative;
+
     margin-bottom: 32px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       flex-direction: row-reverse;
 
       margin-bottom: 338px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 331px;
     }
   }
@@ -95,7 +97,7 @@
       margin-bottom: 28px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       width: 419px;
       height: 80px;
 
@@ -103,7 +105,7 @@
       line-height: 20px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       width: 488px;
       height: 88px;
     }
@@ -114,16 +116,16 @@
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       position: absolute;
       top: 0;
-      left: 112px;
+      left: 46px;
 
-      transform: translateY(-144px);
+      transform: translateY(-50%);
     }
 
-    @media screen and (min-width: 1280px) {
-      left: 180px;
+    @media screen and (min-width: $desktop) {
+      left: 67px;
     }
   }
 
@@ -146,9 +148,9 @@
     margin-top: auto;
     margin-bottom: auto;
 
-    color: #c79002;
+    color: $secondary-text;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       width: 312px;
       height: 122px;
       margin-top: 0;
@@ -157,7 +159,7 @@
       margin-right: auto;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       margin-left: 294px;
       margin-bottom: 116px;
     }
@@ -168,13 +170,13 @@
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       position: absolute;
       top: -196px;
       right: 0;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       top: -169px;
     }
   }
@@ -184,20 +186,15 @@
   .swiper {
     margin-bottom: 20px;
 
-    @media screen and (max-width: 1023px) {
-      position: relative;
-      transform: translateX(-25%);
-    }
-
-    // @media screen and (min-width: 1024px) {
-    //   display: inline-block;
-    // }
-
     &__photos {
-      display: inline-flex;
+      display: flex;
       gap: 20px;
 
-      @media screen and (min-width: 1024px) {
+      @media screen and (max-width: 1023px) {
+        transform: translateX(-50%);
+      }
+
+      @media screen and (min-width: $tablet) {
         gap: 40px;
 
         margin-bottom: 32px;
@@ -208,6 +205,10 @@
       background: #dadada;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
+
+      @media screen and (max-width: 1023px), (min-width: $desktop) {
+        max-width: 245px;
+      }
     }
 
     &__buttons {
@@ -237,19 +238,19 @@
     display: block;
 
     height: 100%;
-
-    border-right: 1px solid rgba(186, 186, 186, 0.4);
+    width: 1px;
+    background-color: rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
   }
 
   &__lines--start {
     left: 34%;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       left: 27%;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       left: 26%;
     }
   }
@@ -257,7 +258,7 @@
   &__lines--centre {
     display: none;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       display: block;
 
       left: 50%;
@@ -267,12 +268,12 @@
   &__lines--end {
     right: 34%;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       right: 27%;
     }
 
-    @media screen and (min-width: 1280px) {
-      left: 26%;
+    @media screen and (min-width: $desktop) {
+      right: 26%;
     }
   }
 }
