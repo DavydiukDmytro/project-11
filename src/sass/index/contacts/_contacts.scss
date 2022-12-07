@@ -142,6 +142,11 @@
     position: relative;
     align-items: center;
     justify-content: right;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            border: 0.5px solid #828282;
+    }
 }
 
 .contacts__hotel {
@@ -167,6 +172,11 @@
     position: relative;
     align-items: center;
     justify-content: right;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            border: 0.5px solid #828282;
+        }
 }
 
 .contacts__tel {
@@ -220,6 +230,11 @@
     justify-content: right;
     margin-top: 48px;
     margin-left: 124px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            border: 0.5px solid #828282;
+        }
 
     @media screen and (max-width: 1023px) {
             margin-top: 16px;
@@ -279,4 +294,12 @@
         width: 634px;
         height: 412px;
     }
+}
+.hhover {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hhover:focus,
+.hhover:hover {
+    color: $secondary-text;
 }
