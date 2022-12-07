@@ -198,6 +198,12 @@
             .next-btn-icon {
                 fill: #fff;
             }
+            .prev-btn-icon:hover,
+            .next-btn-icon:hover, 
+            .prev-btn-icon:focus,
+            .next-btn-icon:focus {
+                fill: $accent;
+            }
 
             @include for-tablet {
                 margin-top: 24px;
