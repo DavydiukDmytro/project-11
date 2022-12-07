@@ -102,11 +102,6 @@
 	}
 
 	&__nav-net {
-<<<<<<< Updated upstream
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-=======
 		position: relative;
 
 		@media screen and (max-width: 1023px) {
@@ -120,7 +115,6 @@
 			flex-direction: column-reverse;
 			margin-left: 137px;
 		}
->>>>>>> Stashed changes
 
 		@media screen and (min-width: 1280px) {
 			margin-left: 201px;
@@ -134,49 +128,12 @@
 		}
 	}
 
-<<<<<<< Updated upstream
-	&__btn::before {
-		content: " ";
-		border: 1px solid rgba(122, 122, 122, 0.4);
-		filter: blur(0.5px);
-		width: 2px;
-		height: 240px;
-		left: -7px;
-		position: absolute;
-		top: -40px;
-	
-		@media screen and (min-width: 1024px) {
-			height: 304px;
-			top: -80px;
-		}
-	}
-
-	&__btn li:not(:last-child) {
-	 	margin-bottom: 12px;
-	 }
-
-	&__btn-link {
-		width: 144px;
-		height: 40px;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-
-		background-color: $dark-bg;
-		color: $accent;
-		border: 0.5px solid $accent;
-		border-radius: 2px;
-=======
 	&__nav-net li:not(:first-child) {
->>>>>>> Stashed changes
 
 		@media screen and (min-width: 1024px) {
 			margin-bottom: 12px;
 		}
 	}
-<<<<<<< Updated upstream
-=======
 
 	&__nav-net::before {
 		
@@ -214,6 +171,5 @@
 			display: none;
 		}
 	}
->>>>>>> Stashed changes
 }
 
