@@ -1,0 +1,126 @@
+<section class="hotel-details section">
+  <span class="line-d line-d--1"></span>
+  <span class="line-d line-d--2"></span>
+  <span class="line-d line-d--3"></span>
+  <div class="hotel-details__container">
+    <p lang="en" class="hotel-details__title">Mimino</p>
+    <h2 class="hotel-details__subtitle">Готель</h2>
+    <p class="hotel-details__description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+  </div>
+  <div class="hotel-details__box">
+    <div class="hotel-details__slides">
+      <ul class="hotel-details__list">
+        <li class="hotel-details__item">
+          <picture>
+            <source
+              srcset="
+                ./images/main/slide-details/image1-mob@1x.jpg 1x,
+               ./images/main/slide-details/image1-mob@2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                ./images/main/slide-details/image1-tablet@1x.jpg 1x,
+                 ./images/main/slide-details/image1-tablet@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/main/slide-details/image1-desktop@1x.jpg 1x,
+                ./images/main/slide-details/image1-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="./images/main/slide-details/image1-mob@1x.jpg"
+              alt="picture"
+            />
+          </picture>
+        </li>
+        <li class="hotel-details__item">
+          <picture>
+            <source
+              srcset="
+                ./images/main/slide-details/image2-mob@1x.jpg 1x,
+                ./images/main/slide-details/image2-mob@2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                ./images/main/slide-details/image2-tablet@1x.jpg 1x,
+                ./images/main/slide-details/image2-tablet@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/main/slide-details/image2-desktop@1x.jpg 1x,
+                ./images/main/slide-details/image2-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="./images/main/slide-details/image2-mob@1x.jpg"
+              alt="picture"
+            />
+          </picture>
+        </li>
+        <li class="hotel-details__item">
+          <picture>
+            <source
+              srcset="
+                ./images/main/slide-details/image0-tablet@1x.jpg 1x,
+                ./images/main/slide-details/image0-tablet@2x.jpg 2x
+              "
+              media="(min-width: 1024px) and (max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/main/slide-details/image0-desktop@1x.jpg 1x,
+                ./images/main/slide-details/image0-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <img
+              src="./images/main/slide-details/image0-desktop@1x.jpg"
+              alt="picture"
+            />
+          </picture>
+        </li>
+      </ul>
+      <div class="image-slider__wrapper">
+        <button class="image-slider__button" type="button">
+          <svg class="hotel-details__arrow" width="32px" height="32px">
+            <use href="/src/images/icon.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="image-slider__button" type="button">
+          <svg class="hotel-details__arrow" width="32px" height="32px">
+            <use href="/src/images/icon.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hotel-details__btns">
+      <button
+        class="mimino-buttons mimino-buttons--bggrey hotel-details__buttons roomOrderBtn"
+        type="button"
+      >
+        Забронювати номер
+      </button>
+      <button
+        class="mimino-buttons mimino-buttons--bggrey hotel-details__buttons roomPriceBtn"
+        type="button"
+      >
+        Переглянути ціни
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,323 @@
+.kitchen {
+    position: relative;
+
+    .btn {
+        display: inline-block;
+        border: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        background: transparent;
+    }
+
+    .logo {
+        font-family: $font-accent-m;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        color: $onpagesnamecolor;
+        margin: 12px 0;
+    }
+
+    // .container {
+    //         background: repeating-linear-gradient(90deg, #0000, #0000 138px, #bababa66 140px 141px);
+
+    //         @include for-tablet {
+    //             background: repeating-linear-gradient(90deg, #0000, #0000 261px, #bababa66 264px 227px)
+    //         }
+
+    //         @include for-desktop {
+    //             background: repeating-linear-gradient(90deg, #0000, #0000 328px, #bababa66 330px 317px);
+    //         }
+    // }
+
+    &__chiefs {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 16px 0;
+
+        &__subtitle {
+            font-family: $font-secondary-m;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.15;
+            color: #B4B4B4;
+        }
+
+        &__description {
+            max-width: 258px;
+            margin-bottom: 28px;
+            color: $description-text-color;
+            font-family: $font-primary-m;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+        }
+
+        &__picture {
+            margin-left: auto;
+        }
+    }
+
+    &__ingredients {
+        display: flex;
+        padding: 16px 0;
+        align-items: center;
+
+        &__picture {
+            .kitchen__ingredients-img {
+                all: unset;
+            }
+        }
+
+        &__description {
+            font-family: $font-primary-m;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+            margin-left: 20px;
+            color: $secondary-text;
+        }
+    }
+
+    .img-shadow {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+
+        @include for-tablet {
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+            border-radius: 0;
+        }
+    }
+
+    @include for-tablet {
+        .kitchen__chiefs__subtitle {
+            font-size: 32px;
+        }
+
+        .kitchen__chiefs__description {
+            font-size: 16px;
+        }
+
+        .logo {
+            font-size: 64px;
+        }
+
+        &__chiefs {
+            padding: 120px 0;
+            &__description {
+                max-width: 50%;
+                padding-right: 15px;
+            }
+
+            &__picture {
+                position: absolute;
+                left: 50%;
+                top: -32px;
+            }
+        }
+
+        &__ingredients {
+            height: 465px;
+            &__description {
+                font-size: 16px; 
+                margin-left: 48px;
+                max-width: 312px;
+            }
+        }
+    }
+
+    @include for-desktop {
+        &__ingredients {
+            height: 600px;
+
+            &__description {
+                margin-left: 32px;
+            }
+        }
+    }
+
+
+    .title--hidden {
+        @extend %visually-hidden;
+    }
+
+    .carousel {
+        overflow: hidden;
+        margin: 0 -15px;
+
+        * {
+            box-sizing: border-box;
+            scrollbar-color: transparent transparent;
+            scrollbar-width: 0px;
+        }
+    
+        *::-webkit-scrollbar {
+            width: 0;
+        }
+    
+        *::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    
+        *::-webkit-scrollbar-thumb {
+            background: transparent;
+            border: none;
+        }
+    
+        * {
+            -ms-overflow-style: none;
+        }
+
+        .slider {
+            transform: translateX(calc(50% - 125px));
+            display: flex;
+            overflow-x: scroll;
+
+            &-img {
+                max-width: 245px;
+                height: 245px;
+                counter-increment: item;
+                flex: 0 0 100%;
+                position: relative;
+                box-shadow: none;
+            }
+
+            &-item {
+                border-radius: 2px;
+                box-shadow: 0 4px 4px #00000040;
+                height: 100%;
+                margin-right: 24px;
+
+                @include for-tablet {
+                    margin-right: 40px;
+                }
+            }
+
+            @include for-tablet {
+                transform: none;
+
+                &-img {
+                    max-width: 194px;
+                    height: 194px;
+                }
+            }
+
+            @include for-desktop {
+                .slider-img {
+                    max-width: 245px;
+                    height: 245px;
+                }
+            }
+
+        }
+
+        .carousel-btns {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 15px;
+
+            .prev-btn {
+                margin-right: 33px;
+            }
+
+            @include for-tablet {
+                padding-right: 0;
+            }
+        }
+
+        @include for-tablet {
+            margin: 0;
+            margin-left: auto;
+            max-width: 428px;
+        }
+
+        @include for-desktop {
+            max-width: 530px;
+            margin-top: -130px;
+        }
+
+    }
+}
+
+// .carousel {
+//     overflow: hidden;
+//     margin: 0 -15px;
+
+//     .slider {
+//         transform: translateX(calc(50% - 125px));
+//         display: flex;
+//         overflow-x: scroll;
+
+//         &-img {
+//             max-width: 245px;
+//             height: 245px;
+//             counter-increment: item;
+//             flex: 0 0 100%;
+//             position: relative;
+//             box-shadow: none;
+//         }
+
+//         &-item {
+//             border-radius: 2px;
+//             box-shadow: 0 4px 4px #00000040;
+//             height: 100%;
+//             margin-right: 24px;
+
+//             @include for-tablet {
+//                 margin-right: 40px;
+//             }
+//         }
+
+//         @include for-tablet {
+//             transform: none;
+
+//             &-img {
+//                 max-width: 194px;
+//                 height: 194px;
+//             }
+//         }
+
+//         @include for-desktop {
+//             .slider-img {
+//                 max-width: 245px;
+//                 height: 245px;
+//             }
+//         }
+
+//     }
+
+//     .carousel-btns {
+//         margin-top: 20px;
+//         display: flex;
+//         justify-content: flex-end;
+//         padding-right: 15px;
+
+//         .prev-btn {
+//             margin-right: 33px;
+//         }
+
+//         @include for-tablet {
+//             padding-right: 0;
+//         }
+//     }
+
+//     @include for-tablet {
+//         margin: 0;
+//         margin-left: auto;
+//         max-width: 428px;
+//     }
+
+//     @include for-desktop {
+//         max-width: 530px;
+//         margin-top: -130px;
+//     }
+// }

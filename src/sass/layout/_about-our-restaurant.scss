@@ -13,6 +13,12 @@
     }
 }
 
+.container {
+    @media screen and (max-width: 1023px) {
+        overflow: hidden;
+    }   
+}
+
 // контейнер для декоративних ліній
 
 .restaurant-section__container {
@@ -21,64 +27,64 @@
 
 // Декоративні лінії
 
-.restaurant-section__container::before {
-    position: absolute;
-    content: '';
-    top: -16px;
-    right: 33.3%;
-    width: 1px;
-    height: 1191px;
-    background-color: rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
+// .restaurant-section__container::before {
+//     position: absolute;
+//     content: '';
+//     top: -16px;
+//     right: 33.3%;
+//     width: 1px;
+//     height: 1191px;
+//     background-color: rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
 
-    @media screen and (min-width: 1024px) {
-        top: -120px;
-        right: 25%;
-        height: 1238px;
-    }
+//     @media screen and (min-width: 1024px) {
+//         top: -120px;
+//         right: 25%;
+//         height: 1238px;
+//     }
 
-    @media screen and (min-width: 1280px) {
-        height: 1275px;
-    }
-}
+//     @media screen and (min-width: 1280px) {
+//         height: 1275px;
+//     }
+// }
 
-.restaurant-section__container::after {
-    position: absolute;
-    content: '';
-    top: -16px;
-    left: 33.3%;
-    width: 1px;
-    height: 1191px;
-    background-color: rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
+// .restaurant-section__container::after {
+//     position: absolute;
+//     content: '';
+//     top: -16px;
+//     left: 33.3%;
+//     width: 1px;
+//     height: 1191px;
+//     background-color: rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
 
-    @media screen and (min-width: 1024px) {
-        top: -120px;
-        left: 25%;
-        height: 1238px;
-    }
+//     @media screen and (min-width: 1024px) {
+//         top: -120px;
+//         left: 25%;
+//         height: 1238px;
+//     }
 
-    @media screen and (min-width: 1280px) {
-        height: 1275px;
-    }
-}
+//     @media screen and (min-width: 1280px) {
+//         height: 1275px;
+//     }
+// }
 
-.restaurant-section__item-1::before {
-    @media screen and (min-width: 1024px) {
-        position: absolute;
-        content: '';
-        top: -120px;
-        left: 50%;
-        width: 1px;
-        height: 1238px;
-        background-color: rgba(186, 186, 186, 0.4);
-        filter: blur(0.5px);
-    }
+// .restaurant-section__item-1::before {
+//     @media screen and (min-width: 1024px) {
+//         position: absolute;
+//         content: '';
+//         top: -120px;
+//         left: 50%;
+//         width: 1px;
+//         height: 1238px;
+//         background-color: rgba(186, 186, 186, 0.4);
+//         filter: blur(0.5px);
+//     }
 
-    @media screen and (min-width: 1280px) {
-        height: 1275px;
-    }
-}
+//     @media screen and (min-width: 1280px) {
+//         height: 1275px;
+//     }
+// }
 
 // заголовок секції
 .restaurant-section__title--visiually-hidden {
@@ -137,6 +143,10 @@
 
         font-size: 64px;
     }
+    @media screen and (min-width: $desktop) {
+        color: $secondary-text-logo;
+    }
+        
 }
 
 .restaurant-section__text {
@@ -287,6 +297,8 @@
     gap: 25px;
 
     @media screen and (max-width: 1023px) {
+        transform: translateX(36%);
+        width: 515px;
         position: absolute;
         right: -15px;
         top: 0;

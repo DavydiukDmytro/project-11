@@ -12,48 +12,64 @@
     color: $accent;
     width: 236px;
     height: 48px;
-    border: 2px solid $white;
+    border: 2px solid $black;
     border-radius: 25px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:active {
         background-color: $white;
     }
     &--bggrey {
+        border: 2px solid $white;
         background-color: $bgblackout-color;
     }
+    &--link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
     &--bgblack {
-        &:hover, &:active{
-            border-color: $accent;
+        
+        &:hover, &:active {
+            border: 2px solid $accent;
+        }
+    }
+    &--border-lemon {
+        @media screen and (min-width:$tablet) {
+            border: 2px solid $primary-bg;
         }
     }
     &--booking {
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 20px;
+        line-height: 24px;
         letter-spacing: 0;
         color: $white;
-        width: 434px;
+        width: 384px;
         height: 64px;
         border: 1px solid $accent;
+        @media screen and (min-width:$tablet) {
+            font-size: 24px;
+            line-height: 29px;
+             width: 434px;   
+            }
         &:hover, &:active {
             background-color: $accent;
             color: $black;
         }
     }
     &--booking-modal {
-        width: 592px;
-        height: 64px;
         border-radius: 2px;
-    }
-    &--booking-modal-mobile {
-        font-size: 20px;
-        line-height: 24px;
-        width: 384px;
         height: 64px;
+        @media screen and (min-width:$tablet){
+         width: 592px;}
     }
-    &--booking-modal-mobile-smallradius {
-        border-radius: 2px;
+    &--white-border {
+        border: 2px solid $white;
     }
+   &--lemon-border {
+    border: 2px solid $secondary-bg;
+   }
 }
 // link--------
 .return-link {
@@ -61,15 +77,23 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
+    
     letter-spacing: 0.02em;
     color: $secondary-text;
     display: inline-flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width:$tablet) {
+        font-size: 20px;
+        line-height: 24px;
+        }
     &__arrow {
-        margin-left: 16.75px;
+        margin-left: 12.75px;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width:$tablet) {
+             margin-left: 16.75px;   
+            }
     }
    &__arrow-icon {
     fill: $secondary-text;
@@ -92,3 +116,22 @@
             fill: $accent;   
     }
 }
+.swipe-button--active:hover,
+.swipe-button--active:focus {
+    color: $accent;
+}
+
+.swipe-button--active {
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swipe-button--svg:focus,
+.swipe-button--svg:hover {
+    fill: $accent;
+}
+
+.swipe-button--svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+

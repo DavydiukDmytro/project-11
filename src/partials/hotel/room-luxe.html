@@ -1,0 +1,124 @@
+<section class="section-room">
+  <div class="container container--hiden">
+    <p class="room-luxe__overhead">Amet minim mollit non</p>
+    <p class="room-luxe__subtitle">MIMIHO</p>
+    <h2 class="room-luxe__title">ДВОМІСНИЙ НОМЕР люкс</h2>
+    <p class="room-luxe__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <picture>
+      <source
+        srcset="
+          ./images/main/basic/3desk.jpg    1x,
+          ./images/main/basic/3desk@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./images/main/basic/3tab.jpg    1x,
+          ./images/main/basic/3tab@2x.jpg 2x
+        "
+        media="(min-width: 1024px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./images/main/basic/hotel-mob.jpg    1x,
+          ./images/main/basic/hotel-mob@2x.jpg 2x
+        "
+        media="(max-width: 1023px)"
+        type="image/jpeg"
+      />
+
+      <img
+        src="./images/main/basic/hotel-mob.jpg "
+        alt="Двомісний номер готелю люкс"
+        class="room-luxe__image"
+      />
+    </picture>
+    <div class="thumb-container">
+      <div class="galary-container">
+        <div class="galary-thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/main/slide/room-1-desk.jpg    1x,
+                ./images/main/slide/room-1-desk@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/main/slide/room-1-mob-tab.jpg    1x,
+                ./images/main/slide/room-1-mob-tab@2x.jpg 2x
+              "
+              media="(max-width: 1279px)"
+              type="image/jpeg"
+            />
+
+            <img
+              src="./images/main/slide/room-1-mob-tab.jpg"
+              alt="Стильна раковина"
+              class="room-luxe__galary room-luxe__galary--absolute"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./images/main/slide/room-2-desk.jpg    1x,
+                ./images/main/slide/room-2-desk@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/main/slide/room-2-mob-tab.jpg    1x,
+                ./images/main/slide/room-2-mob-tab@2x.jpg 2x
+              "
+              media="(max-width: 1279px)"
+              type="image/jpeg"
+            />
+
+            <img
+              src="./images/main/slide/room-2-mob-tab.jpg"
+              alt="Вікнно з пейзажом та чашка кофе"
+              class="room-luxe__galary"
+            />
+          </picture>
+        </div>
+        <div class="slider-room">
+          <button type="button" class="slider-button swipe-button--active">
+            <svg width="32" height="32" class="slider-button__arrow-icon swipe-button--active">
+              <use href="./images/icon.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="slider-button swipe-button--active">
+            <svg width="32" height="32" class="slider-button__arrow-icon swipe-button--active">
+              <use href="./images/icon.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="thumb-room">
+        <a
+          href="./room.html"
+          class="mimino-buttons mimino-buttons--bgblack mimino-buttons--link"
+        >
+          Детальніше
+        </a>
+        <button
+          class="mimino-buttons mimino-buttons--bgblack roomPriceBtn"
+          type="button"
+        >
+          Переглянути ціни
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

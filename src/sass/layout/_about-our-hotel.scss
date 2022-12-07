@@ -57,7 +57,9 @@
       line-height: 1.07;
     }
 
-    @media screen and (min-width: $desktop) {
+
+    @media screen and (min-width: 1280px) {
+      color: $secondary-text-logo;
       margin-bottom: 24px;
     }
   }
@@ -230,53 +232,6 @@
   }
 
   // ---------------Lines-----------------
-
-  &__lines {
-    position: absolute;
-    top: 0;
-
-    display: block;
-
-    height: 100%;
-    width: 1px;
-    background-color: rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-  }
-
-  &__lines--start {
-    left: 34%;
-
-    @media screen and (min-width: $tablet) {
-      left: 27%;
-    }
-
-    @media screen and (min-width: $desktop) {
-      left: 26%;
-    }
-  }
-
-  &__lines--centre {
-    display: none;
-
-    @media screen and (min-width: $tablet) {
-      display: block;
-
-      left: 50%;
-    }
-  }
-
-  &__lines--end {
-    right: 34%;
-
-    @media screen and (min-width: $tablet) {
-      right: 27%;
-    }
-
-    @media screen and (min-width: $desktop) {
-      right: 26%;
-    }
-  }
-}
 
 // -----------Utils-----------------
 

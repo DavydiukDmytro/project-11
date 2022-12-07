@@ -1,0 +1,163 @@
+.hero-room{
+    position: relative;
+        padding-top: 483px;
+        padding-bottom: 118px;
+        background-color: black;
+         
+    @media (min-width:$tablet){
+        padding-top: 468px;
+        
+        }
+        @media (min-width:$desktop){
+        padding-top: 524px;
+        padding-bottom: 48px;
+        padding-left: 135px;
+        padding-right: 135px;
+        }
+}
+.hero-room--bg {
+    max-width: 100%;
+    height: auto;
+    background-image: url(/src/images/hero-hotel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        background-image: url(/src/images/hero-hotel@2x.jpg);
+    }
+}
+.hero-room__title{
+    margin-bottom: 14px;
+    font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: 0.05em;
+    
+        color: #FFFFFF;
+        @media (min-width:$tablet) {
+            margin-bottom: 24px;
+            font-size: 36px;  
+        }
+}
+.hero-room__text{
+    width: 325px;
+    margin-bottom: 17px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+
+        @media (min-width:$tablet) {
+            width: 400px;
+          font-size: 16px;  
+        }
+}
+
+.hero-room__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 15px;
+    bottom: 14px;
+
+    @media (min-width:$tablet) {
+        flex-direction: row;
+        left: 372px;
+        bottom: 38px;
+    }
+
+    @media (min-width:$desktop) {
+        display: none;
+    }
+}
+
+.hero-room__btn--position{
+    position:absolute;
+    left: 109px;
+    bottom: 40px;
+    @media (min-width:$tablet) {
+        left:auto;
+        right: 47px;
+        bottom: 64px;
+    }
+    @media (min-width:$tablet) {
+        right: 123px;
+        bottom: 66px;
+    }
+}
+
+.slider-btn-right{
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:rgba(0, 0, 0, 0.65);
+    border: none;
+    fill:rgba(243, 198, 83, 1);
+    @media (min-width:$desktop){
+        top:60%;
+        right: 123px;
+    }
+}
+.slider-btn-left{
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:rgba(0, 0, 0, 0.65);
+    border: none;
+    fill:rgba(243, 198, 83, 1);
+    @media (min-width:$desktop){
+        top:60%;
+        left: 135px;
+    }
+}
+
+.slider-btn-left:hover, .slider-btn-left:focus,
+.slider-btn-right:hover,
+.slider-btn-right:focus{
+    fill: $secondary-text;
+}
+
+
+.hero-room__address{
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    gap: 8px;
+    position: absolute;
+    right: 15px;
+    top: 65px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    z-index: 1;
+    
+    @media (min-width:$tablet) {
+             gap: 10px;
+             right: auto;
+             top: auto;
+             bottom: 24px; 
+             left: 47px;
+        }
+    @media (min-width:$desktop) {
+           display: none;
+        }
+}
