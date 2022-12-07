@@ -97,6 +97,7 @@
 }
 
 .slider-btn-right{
+    cursor: pointer;
     padding: 0;
     width: 40px;
     height: 40px;
@@ -113,6 +114,7 @@
     }
 }
 .slider-btn-left{
+    cursor: pointer;
     padding: 0;
     width: 40px;
     height: 40px;
@@ -127,6 +129,12 @@
         top:60%;
         left: 135px;
     }
+}
+
+.slider-btn-left:hover, .slider-btn-left:focus,
+.slider-btn-right:hover,
+.slider-btn-right:focus{
+    fill: $secondary-text;
 }
 
 
