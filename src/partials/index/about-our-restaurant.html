@@ -1,178 +1,179 @@
-<section class="restaurant-section">
+<section class="about-restaurant">
   <span class="line-d line-d--1"></span>
   <span class="line-d line-d--2"></span>
   <span class="line-d line-d--3"></span>
-  <div class="container">
-    <div class="restaurant-section__container">
-      <div class="restaurant-section__content">
-        <h2
-          class="restaurant-section__title restaurant-section__title--visiually-hidden"
-        >
-          Про наш ресторан
-        </h2>
-        <p class="restaurant-section__sub-title">Amet minim mollit non</p>
-        <p class="restaurant-section__logo">MIMIHO</p>
-        <p class="restaurant-section__text">
+  <div class="container about-restaurant__container">
+    <div class="about-restaurant__content">
+      <h2
+        class="about-restaurant__title about-restaurant__title--visiually-hidden"
+      >
+        Про наш ресторан
+      </h2>
+      <p class="about-restaurant__sub-title">Amet minim mollit non</p>
+      <p class="about-restaurant__logo">MIMIHO</p>
+      <p class="about-restaurant__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <ul class="about-restaurant__list">
+      <li class="about-restaurant__item-1">
+        <picture>
+          <source
+            srcset="
+              ./images/main/basic/1desk.jpg    460w,
+              ./images/main/basic/1desk@2x.jpg 920w
+            "
+            type="image/jpeg"
+            media="(min-width: 1280px)"
+            sizes="460px"
+          />
+          <source
+            srcset="
+              ./images/main/basic/1tab.jpg    400w,
+              ./images/main/basic/1tab@2x.jpg 800w
+            "
+            type="image/jpeg"
+            media="(min-width: 1024px)"
+            sizes="400px"
+          />
+          <source
+            srcset="
+              ./images/main/basic/1mob.jpg    244w,
+              ./images/main/basic/1mob@2x.jpg 488w
+            "
+            type="image/jpeg"
+            media="(max-width: 1023px)"
+            sizes="244px"
+          />
+          <img
+            class="about-restaurant__image"
+            src=" ./images/main/basic/1mob.jpg"
+            alt="фото"
+          />
+        </picture>
+      </li>
+      <li class="about-restaurant__item-2">
+        <picture>
+          <source
+            srcset="
+              ./images/main/basic/2desk.jpg    460w,
+              ./images/main/basic/2desk@2x.jpg 920w
+            "
+            type="image/jpeg"
+            media="(min-width: 1280px)"
+            sizes="460px"
+          />
+          <source
+            srcset="
+              ./images/main/basic/2tab.jpg    350w,
+              ./images/main/basic/2tab@2x.jpg 700w
+            "
+            type="image/jpeg"
+            media="(min-width: 1024px)"
+            sizes="350px"
+          />
+          <source
+            srcset="
+              ./images/main/basic/2mob.jpg    200w,
+              ./images/main/basic/2mob@2x.jpg 400w
+            "
+            type="image/jpeg"
+            media="(max-width: 1023px)"
+            sizes="200px"
+          />
+          <img
+            class="about-restaurant__image"
+            src="./images/main/basic/2mob.jpg"
+            alt="фото"
+          />
+        </picture>
+        <p class="about-restaurant__description">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-      </div>
-      <ul class="restaurant-section__list">
-        <li class="restaurant-section__item-1">
-          <div class="restaurant-section__item-1-wrap">
-            <picture>
-              <source
-                srcset="
-                  ./images/main/basic/1desk.jpg    1x,
-                  ./images/main/basic/1desk@2x.jpg 2x
-                "
-                type="image/jpeg"
-                media="(min-width: 1280px)"
-                sizes="460px"
-              />
-              <source
-                srcset="
-                  ./images/main/basic/1tab.jpg    1x,
-                  ./images/main/basic/1tab@2x.jpg 2x
-                "
-                type="image/jpeg"
-                media="(min-width: 1024px)"
-                sizes="400px"
-              />
-              <source
-                srcset="
-                  ./images/main/basic/1mob.jpg    1x,
-                  ./images/main/basic/1mob@2x.jpg 2x
-                "
-                type="image/jpeg"
-                media="(max-width: 1023px)"
-                sizes="244px"
-              />
-              <img src=" ./images/main/basic/1mob.jpg" alt="фото" />
-            </picture>
-          </div>
+      </li>
+    </ul>
+    <div class="about-restaurant__image-slider image-slider swiper-about-rest">
+      <ul class="image-slider__list swiper-wrapper">
+        <li class="image-slider__item swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/main/slide/main-rest1-desk.jpg    1x,
+                ./images/main/slide/main-rest1-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)" />
+            <source
+              srcset="
+                ./images/main/slide/main-rest1-tab.jpg    1x,
+                ./images/main/slide/main-rest1-tab@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1024px)" />
+            <source
+              srcset="
+                ./images/main/slide/main-rest1-mob.jpg    1x,
+                ./images/main/slide/main-rest1-mob@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 1023px)" />
+            <img
+              class="image-slider__image"
+              src="./images/main/slide/main-rest1-mob.jpg "
+              alt="Келих червоного вина"
+          /></picture>
         </li>
-        <li class="restaurant-section__item-2">
-          <div class="restaurant-section__item-2-wrap">
-            <picture>
-              <source
-                srcset="
-                  ./images/main/basic/2desk.jpg    1x,
-                  ./images/main/basic/2desk@2x.jpg 2x
-                "
-                type="image/jpeg"
-                media="(min-width: 1280px)"
-                sizes="460px"
-              />
-              <source
-                srcset="
-                  ./images/main/basic/2tab.jpg    1x,
-                  ./images/main/basic/2tab@2x.jpg 2x
-                "
-                type="image/jpeg"
-                media="(min-width: 1024px)"
-                sizes="350px"
-              />
-              <source
-                srcset="
-                  ./images/main/basic/2mob.jpg    1x,
-                  ./images/main/basic/2mob@2x.jpg 2x
-                "
-                type="image/jpeg"
-                media="(max-width: 1023px)"
-                sizes="200px"
-              />
-              <img
-                class="item-2__image"
-                src="./images/main/basic/2mob.jpg"
-                alt="фото"
-              />
-            </picture>
-          </div>
-
-          <p class="restaurant-section__description">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+        <li class="image-slider__item swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/main/slide/main-rest2-desk.jpg    1x,
+                ./images/main/slide/main-rest2-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)" />
+            <source
+              srcset="
+                ./images/main/slide/main-rest2-tab.jpg    1x,
+                ./images/main/slide/main-rest2-tab@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1024px)" />
+            <source
+              srcset="
+                ./images/main/slide/main-rest2-mob.jpg    1x,
+                ./images/main/slide/main-rest2-mob@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 1023px)" />
+            <img
+              class="image-slider__image"
+              src="./images/main/slide/main-rest2-mob.jpg "
+              alt="Багатий стіл ресторану"
+          /></picture>
         </li>
       </ul>
-      <div class="restaurant-section__image-slider image-slider">
-        <div class="image-slider__container">
-          <ul class="image-slider__list">
-            <li class="image-slider__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/main/slide/main-rest1-desk.jpg    1x,
-                    ./images/main/slide/main-rest1-desk@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1280px)" />
-                <source
-                  srcset="
-                    ./images/main/slide/main-rest1-tab.jpg    1x,
-                    ./images/main/slide/main-rest1-tab@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1024px)" />
-                <source
-                  srcset="
-                    ./images/main/slide/main-rest1-mob.jpg    1x,
-                    ./images/main/slide/main-rest1-mob@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 1023px)" />
-                <img
-                  class="image-slider__image"
-                  src="./images/main/slide/main-rest1-mob.jpg "
-                  alt="Келих червоного вина"
-              /></picture>
-            </li>
-            <li class="image-slider__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/main/slide/main-rest2-desk.jpg    1x,
-                    ./images/main/slide/main-rest2-desk@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1280px)" />
-                <source
-                  srcset="
-                    ./images/main/slide/main-rest2-tab.jpg    1x,
-                    ./images/main/slide/main-rest2-tab@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1024px)" />
-                <source
-                  srcset="
-                    ./images/main/slide/main-rest2-mob.jpg    1x,
-                    ./images/main/slide/main-rest2-mob@2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 1023px)" />
-                <img
-                  class="image-slider__image"
-                  src="./images/main/slide/main-rest2-mob.jpg "
-                  alt="Багатий стіл ресторану"
-              /></picture>
-            </li>
-          </ul>
-        </div>
-        <div class="image-slider__wrapper">
-          <button class="image-slider__button swipe-button--active" type="button">
-            <svg class="swipe-button--svg" width="32" height="32">
-              <use href="./images/icon.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <button class="image-slider__button swipe-button--active" type="button">
-            <svg class="swipe-button--svg" width="32" height="32">
-              <use href="./images/icon.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
+      <div class="image-slider__wrap">
+        <button
+          class="image-slider__button swipe-button--active swiper-about-rest-button-prev"
+          type="button"
+        >
+          <svg class="swipe-button--svg" width="32" height="32">
+            <use href="./images/icon.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="image-slider__button swipe-button--active swiper-about-rest-button-next"
+          type="button"
+        >
+          <svg class="swipe-button--svg" width="32" height="32">
+            <use href="./images/icon.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
