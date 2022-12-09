@@ -1,5 +1,11 @@
 // -------------About uor hotel-----------------
 
+.image {
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
 .about-hotel {
   position: relative;
 
@@ -8,7 +14,7 @@
   background-color: $primary-bg;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 120px;
+    padding-top: 0;
     padding-bottom: 32px;
   }
 
@@ -21,229 +27,223 @@
     z-index: 1;
   }
 
-  &__intro {
-    margin-bottom: 6px;
-
-    text-align: end;
-    font-family: 'TimesNewRoman', Times, serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-
-    color: #b4b4b4;
-
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 4px;
-      font-size: 32px;
-      line-height: 1.15;
-    }
+  &__title--visually-hidden {
+    @extend %visually-hidden;
   }
 
-  &__header {
-    margin-bottom: 16px;
-
-    direction: rtl;
-    text-indent: -0.3em;
-    font-family: 'Film P3', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
-
-    color: #494848;
-
-    @media screen and (min-width: $tablet) {
-      font-size: 64px;
-      line-height: 1.07;
-    }
-
-
-    @media screen and (min-width: 1280px) {
-      color: $secondary-text-logo;
-      margin-bottom: 24px;
-    }
-  }
-
-  // ----------- Hotel badroom------------------
-
-  &__badroom-conteiner {
-    position: relative;
-
-    margin-bottom: 32px;
-
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-direction: row-reverse;
-
-      margin-bottom: 338px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 331px;
-    }
-  }
-
-  &__discription {
-    width: 242px;
-    margin-left: auto;
-
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.02em;
-
-    color: #5f5f5f;
-
-    @media screen and (max-width: 1023px) {
-      margin-bottom: 28px;
-    }
-
-    @media screen and (min-width: $tablet) {
-      width: 419px;
-      height: 80px;
-
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 488px;
-      height: 88px;
-    }
-  }
-
-  &__badroom-img {
-    background: #dadada;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-
-    @media screen and (min-width: $tablet) {
-      position: absolute;
-      top: 0;
-      left: 46px;
-
-      transform: translateY(-50%);
-    }
-
-    @media screen and (min-width: $desktop) {
-      left: 67px;
-    }
-  }
-
-  // -------------Hotel lobby-----------------
-
-  &__lobby {
-    position: relative;
-
-    display: flex;
-
+  &__content {
     @media screen and (max-width: 1023px) {
       margin-bottom: 32px;
     }
   }
 
-  &__discription-lobby {
+  &__item:not(:last-child) {
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 32px;
+    }
+    
+  }
+
+  &__item:first-child {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 46px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      gap: 67px;
+    }
+  }
+
+  &__item:last-child {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+
+    @media screen and (min-width: $tablet) {
+      gap: 48px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      align-items: start;
+      gap: 45px;
+    }
+  }
+
+  &__badroom-image {
+    @media screen and (min-width: $tablet) {
+      margin-top: -24px;
+    }
+  }
+
+  &__wrap {
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 120px;
+    }
+  }
+
+  &__sub-title {
+    margin-left: auto;
+    margin-bottom: 6px;
+    width: 197px;
+
+    font-family: 'TimesNewRoman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+  
+    color: #B4B4B4;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 4px;
+      width: 310px;
+
+      font-size: 32px;
+      line-height: 1.16;
+    }
+  }
+
+  &__logo {
+    margin-left: auto;
+    margin-bottom: 16px;
+    
+    width: 127px;
+
+    font-family: 'Film P3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+  
+    color: #494848;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+      width: 205px;
+
+      font-size: 64px;
+    }
+  }
+
+  &__description {
+    margin-left: auto;
+    width: 245px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+  
+    color: #5F5F5F;
+   
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      width: 419px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 488px;
+    }
+  }
+
+  &__description--gold {
+    
     width: 163px;
-    height: 120px;
-    margin-right: 21px;
-    margin-top: auto;
-    margin-bottom: auto;
 
     color: $secondary-text;
 
     @media screen and (min-width: $tablet) {
       width: 312px;
-      height: 122px;
-      margin-top: 0;
-      margin-bottom: 154px;
-      margin-left: 220px;
-      margin-right: auto;
+      font-size: 16px;
     }
 
     @media screen and (min-width: $desktop) {
-      margin-left: 294px;
-      margin-bottom: 116px;
+      padding-top: 123px;
     }
   }
 
-  &__lobby-img {
-    background: #dadada;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-
+  &__lobby-image {
     @media screen and (min-width: $tablet) {
-      position: absolute;
-      top: -196px;
-      right: 0;
+      margin-top: -24px;
     }
 
     @media screen and (min-width: $desktop) {
-      top: -169px;
+      margin-top: -46px;
     }
   }
+}
 
-  // ----------------Swiper--------------
+    // ----------------Swiper-------------
+.swiper {
+  overflow: hidden;
 
-  .swiper {
+  @media screen and (max-width: 1023px) {
+    max-width: 330px;
+    margin-right: auto;
+    margin-left: -15px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: -28px;
+  
+    width: 428px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: -167px;
+ 
+    width: 530px;
+  }
+
+  &__photos {
     margin-bottom: 20px;
 
-    &__photos {
-      display: flex;
-      gap: 20px;
+    display: flex;
+    width: 100%;
 
-      @media screen and (max-width: 1023px) {
-        transform: translateX(-50%);
-      }
-
-      @media screen and (min-width: $tablet) {
-        gap: 40px;
-
-        margin-bottom: 32px;
-      }
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
     }
 
-    &__img {
-      background: #dadada;
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-      border-radius: 2px;
-
-      @media screen and (max-width: 1023px), (min-width: $desktop) {
-        max-width: 245px;
-      }
-    }
-
-    &__buttons {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      gap: 32px;
-
-      &--left {
-        background-color: inherit;
-        border: none;
-      }
-
-      &--right {
-        background-color: inherit;
-        border: none;
-      }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
     }
   }
-}
-  // ---------------Lines-----------------
 
-// -----------Utils-----------------
+  &__item {
+    display: flex;
+    flex-shrink: 0;
+  }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  &__img {
+    background: #dadada;
+
+    border-radius: 2px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 32px;
+
+    @media screen and (max-width: 1023px) {
+      margin-left: 15px;
+    }
+  }
+
+  &__swiper__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
+
